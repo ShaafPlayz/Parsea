@@ -1,4 +1,4 @@
-# Parsea
+# Parsea (Under Development)
 
 #### AI desktop tool that reads your inbox and flags job updates, so you don't waste time checking every email.
 
