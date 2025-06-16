@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Job Application Tracker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #ffffff 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+        padding: 40px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      h1 {
+        color: black;
+        margin-bottom: 10px;
+        font-size: 5.2em;
+        font-weight: 800;
+      }
+
+      .subtitle {
+        color: #666;
+        margin-bottom: 30px;
+        font-size: 1.1em;
+        opacity: 0.8;
+        
+      }
+
+      #checkBtn {
+        background: linear-gradient(45deg, #667eea, #764ba2);
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        font-size: 1.1em;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        margin-bottom: 30px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+      }
+
+      #checkBtn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+      }
+
+      #checkBtn:active {
+        transform: translateY(0);
+      }
+
+      #checkBtn:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+        transform: none;
+      }
+
+      #output {
+        background: #f8f9fa;
+        border: 1px solid #e9ecef;
+        border-radius: 12px;
+        padding: 20px;
+        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+        font-size: 14px;
+        color: #495057;
+        text-align: left;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        min-height: 120px;
+        line-height: 1.5;
+        position: relative;
+        overflow-y: auto;
+        max-height: 300px;
+      }
+
+      #output:empty::before {
+        content: "Click 'Analyze Email' to get started...";
+        color: #adb5bd;
+        font-style: italic;
+      }
+
+      .loading {
+        display: none;
+        margin: 10px 0;
+      }
+
+      .loading.show {
+        display: block;
+      }
+
+      .spinner {
+        border: 2px solid #f3f3f3;
+        border-top: 2px solid #667eea;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        animation: spin 1s linear infinite;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+
+      .status-badge {
+        display: inline-block;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-left: 10px;
+      }
+
+      .status-interview {
+        background: #d4edda;
+        color: #155724;
+      }
+
+      .status-offer {
+        background: #d1ecf1;
+        color: #0c5460;
+      }
+
+      .status-rejection {
+        background: #f8d7da;
+        color: #721c24;
+      }
+
+      .status-other {
+        background: #fff3cd;
+        color: #856404;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Parsea</h1>
+      <p class="subtitle">AI-powered email classification system</p>
+      
+      <button type="button" id="checkBtn">Analyze Email</button>
+      
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <span>Analyzing email with AI...</span>
+      </div>
+      
+      <div id="output"></div>
+    </div>
+
+    <script>
+      const { ipcRenderer } = require('electron');
+      
+      document.getElementById('checkBtn').addEventListener('click', async () => {
+        const button = document.getElementById('checkBtn');
+        const output = document.getElementById('output');
+        const loading = document.getElementById('loading');
+        
+        // Show loading state
+        button.disabled = true;
+        button.textContent = 'Analyzing...';
+        loading.classList.add('show');
+        output.textContent = '';
+        
+        try {
+          const result = await ipcRenderer.invoke('check-emails');
+          
+          // Add status badge based on classification
+          let displayResult = result;
+          if (result.includes('Interview')) {
+            displayResult += ' <span class="status-badge status-interview">Interview</span>';
+          } else if (result.includes('Offer')) {
+            displayResult += ' <span class="status-badge status-offer">Offer</span>';
+          } else if (result.includes('Rejection')) {
+            displayResult += ' <span class="status-badge status-rejection">Rejection</span>';
+          } else {
+            displayResult += ' <span class="status-badge status-other">Other</span>';
+          }
+          
+          output.innerHTML = displayResult;
+        } catch (error) {
+          output.textContent = `❌ Error: ${error.message}`;
+        } finally {
+          // Reset button state
+          button.disabled = false;
+          button.textContent = 'Analyze Email';
+          loading.classList.remove('show');
+        }
+      });
+    </script>
+  </body>
+</html>
