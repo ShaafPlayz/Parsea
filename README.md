@@ -1,2 +1,3 @@
 # Parsea
-![image](https://github.com/user-attachments/assets/cf3e0565-50ca-48c2-94a8-98c98855506a)
+![image](https://github.com/user-attachments/assets/e629106a-8778-41c8-812e-0a9501df9fe6)
+
