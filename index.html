@@ -3,215 +3,327 @@
   <head>
     <title>Parsea</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: Hubot Sans;
       }
-
+      
       body {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        background: linear-gradient(135deg, #ffffff 0%, #764ba2 100%);
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background-color: #f5f5f5;
+        height: 100vh;
+        overflow: hidden;
       }
-
-      .container {
-        background: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        border-radius: 10px;
-        padding: 40px;
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        width: 100%;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-      }
-
-      h1 {
-        color: black;
-        margin-bottom: 10px;
-        font-size: 5.2em;
-        font-weight: 800;
-      }
-
-      .subtitle {
-        color: #666;
-        margin-bottom: 30px;
-        font-size: 1.1em;
-        opacity: 0.8;
-        
-      }
-
-      #checkBtn {
-        background: linear-gradient(45deg, #667eea, #764ba2);
+      
+      /* Header */
+      .header {
+        background: linear-gradient(135deg, #141414 0%, #764ba2 100%);
         color: white;
+        padding: 1rem 2rem;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: row;
+        z-index: 100;
+        position: relative;
+      }
+      
+      .header h1 {
+        font-size: 1.8rem;
+        font-weight: 600;
+      }
+      
+      .header .subtitle {
+        font-size: 0.9rem;
+        opacity: 0.9;
+        margin-top: 0.2rem;
+      }
+      
+      /* Main Layout */
+      .main-container {
+        display: flex;
+        height: calc(100vh - 80px);
+      }
+      
+      
+      
+      .analyze-btn {
+        width: 100%;
+        background: linear-gradient(135deg, #ffffff 100%, #ffffff 100%);
+        color: #764ba2;
         border: none;
-        padding: 15px 30px;
-        font-size: 1.1em;
-        border-radius: 50px;
+        padding: 1rem;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        font-weight: 300;
         cursor: pointer;
         transition: all 0.3s ease;
-        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
-        margin-bottom: 30px;
-        font-weight: 500;
-        letter-spacing: 0.5px;
+        margin-top: 1rem;
       }
-
-      #checkBtn:hover {
+      
+      .analyze-btn:hover {
         transform: translateY(-2px);
-        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
       }
-
-      #checkBtn:active {
-        transform: translateY(0);
-      }
-
-      #checkBtn:disabled {
+      
+      .analyze-btn:disabled {
         opacity: 0.6;
         cursor: not-allowed;
         transform: none;
+        box-shadow: none;
       }
-
-      #output {
-        background: #f8f9fa;
-        border: 1px solid #e9ecef;
-        border-radius: 12px;
-        padding: 20px;
-        font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
-        font-size: 14px;
-        color: #495057;
-        text-align: left;
-        white-space: pre-wrap;
-        word-wrap: break-word;
-        min-height: 120px;
-        line-height: 1.5;
-        position: relative;
+      
+      /* Content Area */
+      .content {
+        flex: 1;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .content-header {
+        padding: 1.5rem 2rem;
+        border-bottom: 1px solid #e0e0e0;
+        background-color: #fafafa;
+      }
+      
+      .content-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 0.3rem;
+      }
+      
+      .content-subtitle {
+        color: #666;
+        font-size: 0.9rem;
+      }
+      
+      .email-list {
+        flex: 1;
         overflow-y: auto;
-        max-height: 300px;
+        padding: 1rem;
       }
-
-      #output:empty::before {
-        content: "Click 'Analyze Email' to get started...";
-        color: #adb5bd;
-        font-style: italic;
+      
+      .email-item {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border-bottom: 1px solid #f0f0f0;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
       }
-
+      
+      .email-item:hover {
+        background-color: #f8f9ff;
+      }
+      
+      .email-item.unread {
+        background-color: #f9f9f9;
+        font-weight: 600;
+      }
+      
+      .email-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        margin-right: 1rem;
+        flex-shrink: 0;
+      }
+      
+      .email-content {
+        flex: 1;
+        min-width: 0;
+      }
+      
+      .email-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.3rem;
+      }
+      
+      .email-sender {
+        font-weight: 600;
+        color: #333;
+      }
+      
+      .email-date {
+        color: #999;
+        font-size: 0.85rem;
+      }
+      
+      .email-subject {
+        color: #555;
+        margin-bottom: 0.2rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+      .email-preview {
+        color: #888;
+        font-size: 0.85rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      
+      .status-badge {
+        padding: 0.3rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        margin-left: 0.5rem;
+      }
+      
+      .status-interview {
+        background-color: #e3f2fd;
+        color: #1976d2;
+      }
+      
+      .status-offer {
+        background-color: #e8f5e8;
+        color: #2e7d32;
+      }
+      
+      .status-rejection {
+        background-color: #ffebee;
+        color: #c62828;
+      }
+      
+      .status-other {
+        background-color: #f3e5f5;
+        color: #7b1fa2;
+      }
+      
+      /* Loading */
       .loading {
         display: none;
-        margin: 10px 0;
+        text-align: center;
+        padding: 2rem;
+        color: #666;
       }
-
+      
       .loading.show {
         display: block;
       }
-
+      
       .spinner {
-        border: 2px solid #f3f3f3;
-        border-top: 2px solid #667eea;
+        width: 40px;
+        height: 40px;
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #667eea;
         border-radius: 50%;
-        width: 20px;
-        height: 20px;
         animation: spin 1s linear infinite;
-        display: inline-block;
-        margin-right: 10px;
+        margin: 0 auto 1rem;
       }
-
+      
       @keyframes spin {
         0% { transform: rotate(0deg); }
         100% { transform: rotate(360deg); }
       }
-
-      .status-badge {
-        display: inline-block;
-        padding: 4px 12px;
-        border-radius: 20px;
-        font-size: 12px;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 0.5px;
-        margin-left: 10px;
-      }
-
-      .status-interview {
-        background: #d4edda;
-        color: #155724;
-      }
-
-      .status-offer {
-        background: #d1ecf1;
-        color: #0c5460;
-      }
-
-      .status-rejection {
-        background: #f8d7da;
-        color: #721c24;
-      }
-
-      .status-other {
-        background: #fff3cd;
-        color: #856404;
+      
+      /* Results */
+      .results {
+        padding: 2rem;
+        background-color: white;
+        margin: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        white-space: pre-wrap;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9rem;
+        line-height: 1.6;
       }
     </style>
   </head>
   <body>
-    <div class="container">
-      <h1>Parsea</h1>
-      <p class="subtitle">AI-powered email classification system</p>
-      
-      <button type="button" id="checkBtn">Analyze Email</button>
-      
-      <div class="loading" id="loading">
-        <div class="spinner"></div>
-        <span>Analyzing email with AI...</span>
+    <!-- Header -->
+    <div class="header">
+      <div style="width: 70%;">
+        <h1>Parsea</h1>
+        <div class="subtitle">AI-powered email classification system</div>
       </div>
-      
-      <div id="output"></div>
+      <div style="width: 30%;">
+        <button type="button" id="checkBtn" class="analyze-btn">
+          🤖 Analyze Emails
+        </button>
+      </div>
     </div>
+    
 
-    <script>
+    <!-- Main Container -->
+    <div class="main-container">      <!-- Sidebar -->
+     
+
+      <!-- Content Area -->
+      <div class="content">
+        
+        <div class="email-list">
+          <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <span>Analyzing emails with AI...</span>
+          </div>
+          
+          <div id="output" class="results" style="display: none;"></div>
+          
+          <!-- Placeholder content when no analysis has run -->
+          <div id="placeholder" class="email-item">
+            <div class="email-avatar">AI</div>
+            <div class="email-content">
+              <div class="email-header">
+                <span class="email-sender">Parsea AI Assistant</span>
+                <span class="email-date">Ready</span>
+              </div>
+              <div class="email-subject">Click "Analyze Emails" to start</div>
+              <div class="email-preview">I'll scan your inbox and classify job-related emails for you...</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>    <script>
       const { ipcRenderer } = require('electron');
       
       document.getElementById('checkBtn').addEventListener('click', async () => {
         const button = document.getElementById('checkBtn');
         const output = document.getElementById('output');
         const loading = document.getElementById('loading');
+        const placeholder = document.getElementById('placeholder');
         
         // Show loading state
         button.disabled = true;
-        button.textContent = 'Analyzing...';
+        button.innerHTML = '🔄 Analyzing...';
         loading.classList.add('show');
-        output.textContent = '';
+        output.style.display = 'none';
+        if (placeholder) placeholder.style.display = 'none';
         
         try {
           const result = await ipcRenderer.invoke('check-emails');
           
-          // Add status badge based on classification
-          let displayResult = result;
-          if (result.includes('Interview')) {
-            displayResult += ' <span class="status-badge status-interview">Interview</span>';
-          } else if (result.includes('Offer')) {
-            displayResult += ' <span class="status-badge status-offer">Offer</span>';
-          } else if (result.includes('Rejection')) {
-            displayResult += ' <span class="status-badge status-rejection">Rejection</span>';
-          } else {
-            displayResult += ' <span class="status-badge status-other">Other</span>';
-          }
+          // Show results
+          output.textContent = result;
+          output.style.display = 'block';
           
-          output.innerHTML = displayResult;
         } catch (error) {
           output.textContent = `❌ Error: ${error.message}`;
+          output.style.display = 'block';
         } finally {
           // Reset button state
           button.disabled = false;
-          button.textContent = 'Analyze Email';
+          button.innerHTML = '🤖 Analyze Emails';
           loading.classList.remove('show');
-        }
-      });
+        }      });
     </script>
   </body>
 </html>

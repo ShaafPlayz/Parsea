@@ -2,7 +2,9 @@ const { app, BrowserWindow, ipcMain } = require('electron/main');
 const path = require('path');
 require('dotenv').config();
 
+const { fetchEmailsAsJSON } = require('./IMAP'); // Import IMAP module
 const { classifyEmail } = require('./ai'); // Import your cohere code
+
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -30,20 +32,13 @@ app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') app.quit();
 });
 
-// Test with fake email (replace later with real fetched text)
+// Check emails handler
 ipcMain.handle('check-emails', async () => {
   console.log('check-emails handler called');
-  const testEmail = `
-    Hello Shaaf,
 
-    Thank you for your application. We are pleased to invite you for an interview next Tuesday at 2 PM.
-
-    Best regards,
-    Amazon Careers Team`;
-
-  console.log('About to classify email:', testEmail);
+  console.log('About to classify emails');
   try {
-    const result = await classifyEmail(testEmail);
+    const result = await classifyEmail();
     console.log('Classification result:', result);
     return `${result}`;
   } catch (error) {

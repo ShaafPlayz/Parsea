@@ -14,9 +14,12 @@
     "electron-reload": "^2.0.0-alpha.1"
   },
   "dependencies": {
+    "@azure/msal-node": "^3.6.0",
+    "axios": "^1.10.0",
     "cohere-ai": "^7.17.1",
     "dotenv": "^16.5.0",
     "imap": "^0.8.17",
+    "imapflow": "^1.0.188",
     "mailparser": "^3.7.3"
   }
 }
