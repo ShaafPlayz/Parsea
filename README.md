@@ -19,6 +19,69 @@
 - Could experiment with a RAG type workflow for this application
 - Context Length might become an issue, because the emails parsed are a lot
 
+## Use the Product
+
+### Prerequisites
+- Node.js (version 14 or higher)
+- npm or yarn package manager
+
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd parseML
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Dependencies
+This project uses the following dependencies:
+
+**Production Dependencies:**
+- `@azure/msal-node@^3.6.0` - Microsoft Authentication Library for Azure AD
+- `axios@^1.10.0` - HTTP client for API requests
+- `cohere-ai@^7.17.1` - Cohere AI API client
+- `dotenv@^16.5.0` - Environment variable loader
+- `imap@^0.8.17` - IMAP client library
+- `imapflow@^1.0.188` - Modern IMAP client
+- `mailparser@^3.7.3` - Email parsing utilities
+
+**Development Dependencies:**
+- `electron@^36.4.0` - Desktop application framework
+- `electron-reload@^2.0.0-alpha.1` - Hot reload for Electron development
+
+### Running the Application
+```bash
+npm start
+```
+
+## Contributing
+Contributions are welcome! Please open an issue or submit a pull request for improvements or bug fixes.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+For questions or support, open an issue on the repository or contact the maintainer.
+
+## Contact
+For questions or support, open an issue on the repository or contact the maintainer.
+---
+
+## Features
+- Gets last 4 days of emails into a csv using IMAP
+- Prompts Command-a-03-2025 all of the emails with a system prompt
+- The Electron UI displays the result sent my Cohere
+
+## Problems
+- Requires a better way to parse all the emails locally before sending it to the model
+- Design could have a better UI that is more intuitive compared to just a text
+- Could experiment with a RAG type workflow for this application
+- Context Length might become an issue, because the emails parsed are a lot
+
 ## Use the Product (Coming soon, or you can try getting all the dependencies yourself, its not all documented yet)
 - I gotta figure this out soon lol 
 
