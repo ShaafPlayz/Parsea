@@ -2,6 +2,8 @@
 
 #### AI desktop tool that reads your inbox and flags job updates, so you don't waste time checking every email.
 
+![image](https://github.com/user-attachments/assets/44fd168b-edee-401d-9b0d-bb5ee5c5e7f9)
+#### Loading
 ![image](https://github.com/user-attachments/assets/ea4bc9d0-a923-410f-b89c-941dad79b195)
 
 ---
