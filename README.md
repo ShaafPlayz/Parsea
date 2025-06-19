@@ -22,6 +22,8 @@
 - Design could have a better UI that is more intuitive compared to just a text
 - Could experiment with a RAG type workflow for this application
 - Context Length might become an issue, because the emails parsed are a lot
+- Need another filter to not parse google/outlook/etc authuntication codes
+- Need a local model that looks for private information before prompting Cohere LLM with all emails
 
 ## Use the Product
 
