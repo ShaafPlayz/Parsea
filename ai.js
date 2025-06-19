@@ -11,8 +11,8 @@ const cohere = new CohereClientV2({
 
 async function classifyEmail() {
   // Fetch fresh emails from the server (saves to CSV)
-  await fetchEmailsAsJSON();
   
+  await fetchEmailsAsJSON();
   // Read emails from CSV file
   const csvContent = fs.readFileSync('emails.csv', 'utf8');
   const csvLines = csvContent.split('\n');
@@ -43,7 +43,8 @@ async function classifyEmail() {
     `Subject: ${email.subject}\nFrom: ${email.from}\nDate: ${email.date}\n---`
   ).join('\n\n');
   
-    const prompt = `Here are the emails to process: ${emailsText}`
+  const prompt = `Here are the emails to process: ${emailsText}`
+
 
   const testPrompt = `Could you find the email from Workday HR ON June 13TH: ${emailsText}`
   try {
@@ -60,26 +61,27 @@ async function classifyEmail() {
                 - Confirmation — The email confirms receipt of an application, test, or other form submission.
                 - Other — Anything that doesn’t fall into the above categories.
 
-                📊 **Final Summary Section:**
+
+                Start by writing a summary section:
+                **Summary Section:**
                 - Rejections: #
                 - Confirmations: #
                 - Interviews: #
                 - Offers: #
-                - Other (needs review): #
+                - Others: #
                 
-                For each classification, take the following action:
+                Only then do the following:
+                Return the title of the email for the interview, rejection, confirmation and, offer. 
+                This is because I will be using this information to find that specific email.
+                DO NOT RETURN THE CONTENTS OF ANY EMAIL. 
+                FOLLOW THE FOLLOWING FORMAT:
 
-                🟢 **If the email is an Interview or Offer**  
-                - Show the subject, sender, and a short summary (1–2 sentences max).
-                - Provide your classification and reasoning.
+                **Futher:**
+                "Title of email", "Title of email", "Title of email", "Title of email", etc..
+                
 
-                🟡 **If the email is a Rejection or Confirmation**  
-                - Do not display the emails individually.
-                - Instead, report the total count of each.
-
-                🔴 **If the email is classified as Other**  
-                - Display the full content of the email.
-                - Highlight **why it might still require attention** (e.g., ambiguous phrasing, follow-up needed, etc.).
+                ANY EMAIL THAT DOES NOT FALL IN ANY OF THE ABOVE CATEGORIES, COUNT THEM IN THE OTHERS.
+                IGNORE THE LINKEDIN INVITATIONS BUT DO COUNT THEM IN OTHERS.
                 INPUT FORMAT: You will receive email data extracted from a CSV file containing recent emails from the user's inbox. Each email includes: Subject, From (sender), Date, and content.`    
         },
         {
@@ -87,9 +89,9 @@ async function classifyEmail() {
           content: prompt
         }
       ],
-      temperature: 0.3
+      temperature: 0
     });
-
+    
     return response.message.content[0].text.trim();
   } catch (error) {
     console.error('Error with Cohere API:', error);
