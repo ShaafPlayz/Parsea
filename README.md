@@ -1,14 +1,6 @@
 # Parsea
-#
+#### A desktop tool that reads your inbox and flags job updates, so you don't waste time checking every email.
 ![Showcase](resources/showcase.gif)
-
-#### AI desktop tool that reads your inbox and flags job updates, so you don't waste time checking every email.
-
-![image](https://github.com/user-attachments/assets/44fd168b-edee-401d-9b0d-bb5ee5c5e7f9)
-#### Loading
-![image](https://github.com/user-attachments/assets/ea4bc9d0-a923-410f-b89c-941dad79b195)
-
----
 
 ## Features
 - Fetches recent emails from your inbox and saves them to a CSV file using IMAP
@@ -48,6 +40,8 @@ This is implemented with regular expressions for robust detection. Only emails t
 - Design could have a better UI that is more intuitive compared to just a text
 - Could experiment with a RAG type workflow for this application
 - Context Length might become an issue, because the emails parsed are a lot
+- Need another filter to not parse google/outlook/etc authuntication codes
+- Need a local model that looks for private information before prompting Cohere LLM with all emails
 
 ## Use the Product
 
