@@ -1,5 +1,5 @@
 # Parsea
-#### A desktop tool that reads your inbox and flags job updates, so you don't waste time checking every email.
+#### A secure desktop tool that reads your inbox and flags job updates, so you don't waste time checking every email.
 ![Showcase](resources/showcase.gif)
 #### Parsea (CyberSecurity Update)
 ![image](https://github.com/user-attachments/assets/31df741a-61a3-4699-a5a1-b32adba6300b)
