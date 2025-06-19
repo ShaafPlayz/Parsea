@@ -13,6 +13,7 @@
 ## Features
 - Fetches recent emails from your inbox and saves them to a CSV file using IMAP
 - Parses the CSV into structured email objects (subject, sender, date, etc.)
+- **Cybersecurity filter:** Automatically removes emails that appear to be authentication code, OTP, or security code messages using advanced pattern matching (see below)
 - Uses Cohere AI (Command-a-03-2025) to classify job application–related emails into categories: Interview, Offer, Rejection, Confirmation, and Other
 - Returns only the titles of relevant emails for easy identification (no email contents are exposed)
 - Provides a summary count for each category in the AI response
@@ -24,6 +25,23 @@
 - Improved CSV parsing and email formatting for AI input
 - Ensured only email titles are returned for classified emails
 - Added error handling for Cohere API failures
+- **Added advanced cybersecurity filter:** The app now removes emails that match common authentication code, OTP, or security code patterns before any AI processing. This helps protect sensitive information and keeps your dataset clean.
+
+### Cybersecurity Filter Details
+
+The filter removes emails whose subject or body matches any of these patterns:
+
+- "verification code"
+- "authentication code" or "auth code"
+- "use code"
+- "your code"
+- "login code"
+- "security code"
+- "2fa code"
+- "otp"
+- Any 4–8 digit number **only if** it appears near the words "code" or "pin" (e.g., "Your code is 123456")
+
+This is implemented with regular expressions for robust detection. Only emails that do **not** match these patterns are kept for further processing and AI classification.
 
 ## Problems
 - Requires a better way to parse all the emails locally before sending it to the model
