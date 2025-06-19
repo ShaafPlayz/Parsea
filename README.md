@@ -9,9 +9,19 @@
 ---
 
 ## Features
-- Gets last 4 days of emails into a csv using IMAP
-- Prompts Command-a-03-2025 all of the emails with a system prompt
-- The Electron UI displays the result sent my Cohere
+- Fetches recent emails from your inbox and saves them to a CSV file using IMAP
+- Parses the CSV into structured email objects (subject, sender, date, etc.)
+- Uses Cohere AI (Command-a-03-2025) to classify job application–related emails into categories: Interview, Offer, Rejection, Confirmation, and Other
+- Returns only the titles of relevant emails for easy identification (no email contents are exposed)
+- Provides a summary count for each category in the AI response
+- Robust error handling for API and parsing issues
+- Modular code for easy maintenance and extension
+
+## Recent Updates (June 19, 2025)
+- Refactored email classification logic to use a detailed system prompt for Cohere AI
+- Improved CSV parsing and email formatting for AI input
+- Ensured only email titles are returned for classified emails
+- Added error handling for Cohere API failures
 
 ## Problems
 - Requires a better way to parse all the emails locally before sending it to the model
