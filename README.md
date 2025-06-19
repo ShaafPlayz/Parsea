@@ -1,4 +1,6 @@
 # Parsea
+#
+![Showcase](resources/showcase.gif)
 
 #### AI desktop tool that reads your inbox and flags job updates, so you don't waste time checking every email.
 
