@@ -1,23 +1,11 @@
 # Parsea
 #### A secure desktop tool that reads your inbox and flags job updates, so you don't waste time checking every email.
 ![Showcase](resources/showcase.gif)
-#### Parsea (CyberSecurity Update - 19th June 2025)
-![image](https://github.com/user-attachments/assets/31df741a-61a3-4699-a5a1-b32adba6300b)
 
 #### Parsea (UI Update - 20th June 2025)
 ![image](https://github.com/user-attachments/assets/ee5c22af-cce7-405a-931f-c5c54cac034f)
-
-
-
-## Features
-- Fetches recent emails from your inbox and saves them to a CSV file using IMAP
-- Parses the CSV into structured email objects (subject, sender, date, etc.)
-- **Cybersecurity filter:** Automatically removes emails that appear to be authentication code, OTP, or security code messages using advanced pattern matching (see below)
-- Uses Cohere AI (Command-a-03-2025) to classify job application–related emails into categories: Interview, Offer, Rejection, Confirmation, and Other
-- Returns only the titles of relevant emails for easy identification (no email contents are exposed)
-- Provides a summary count for each category in the AI response
-- Robust error handling for API and parsing issues
-- Modular code for easy maintenance and extension
+#### Parsea (CyberSecurity Update - 19th June 2025)
+![image](https://github.com/user-attachments/assets/31df741a-61a3-4699-a5a1-b32adba6300b)
 
 ## Recent Updates (June 20, 2025)
 - Rehauled the entire UI
@@ -52,6 +40,19 @@ The filter removes emails whose subject or body matches any of these patterns:
 - Any 4–8 digit number **only if** it appears near the words "code" or "pin" (e.g., "Your code is 123456")
 
 This is implemented with regular expressions for robust detection. Only emails that do **not** match these patterns are kept for further processing and AI classification.
+
+
+
+
+## Features
+- Fetches recent emails from your inbox and saves them to a CSV file using IMAP
+- Parses the CSV into structured email objects (subject, sender, date, etc.)
+- **Cybersecurity filter:** Automatically removes emails that appear to be authentication code, OTP, or security code messages using advanced pattern matching (see below)
+- Uses Cohere AI (Command-a-03-2025) to classify job application–related emails into categories: Interview, Offer, Rejection, Confirmation, and Other
+- Returns only the titles of relevant emails for easy identification (no email contents are exposed)
+- Provides a summary count for each category in the AI response
+- Robust error handling for API and parsing issues
+- Modular code for easy maintenance and extension
 
 ## Problems
 - Requires a better way to parse all the emails locally before sending it to the model
