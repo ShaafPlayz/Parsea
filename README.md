@@ -4,6 +4,9 @@
 #### Parsea (CyberSecurity Update)
 ![image](https://github.com/user-attachments/assets/31df741a-61a3-4699-a5a1-b32adba6300b)
 
+#### Parsea (UI Update)
+![image](https://github.com/user-attachments/assets/ee5c22af-cce7-405a-931f-c5c54cac034f)
+
 
 
 ## Features
@@ -15,6 +18,12 @@
 - Provides a summary count for each category in the AI response
 - Robust error handling for API and parsing issues
 - Modular code for easy maintenance and extension
+
+## Recent Updates (June 20, 2025)
+- Rehauled the entire UI
+- Added a DEMO settings Page
+- Modified the system prompt to flag each interesting email with a category
+- Did some magic
 
 ## Recent Updates (June 19, 2025)
 - Refactored email classification logic to use a detailed system prompt for Cohere AI
