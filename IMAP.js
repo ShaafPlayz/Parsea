@@ -6,61 +6,83 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 require('dotenv').config();
 const { ImapFlow } = require('./lib/imap-flow');
 
-const client = new ImapFlow({
-    host: 'imap.gmail.com',
-    port: 993,
-    secure: true,
-    tls: {
-        rejectUnauthorized: false
-    },
+// function checkSettings(){
+//   try {
+//     settings = JSON.parse(localStorage.getItem('parseaSettings') || '{}');
+//     credentials.email = settings.email;
+//     credentials.host = settings.server;
+//     credentials.pass = settings.password;
+//     credentials.port = settings.port;
+//     credentials.secure = settings.secure;
 
-    auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS
-    },
+//   } catch (error) {
+//     console.error('Error loading settings:', error);
+//   }
+// };
 
-    clientInfo: {
-        name: false,
-        'support-url': false,
-        vendor: false,
-        date: false
-    }
-});
+let credentials = {
+  email: process.env.EMAIL_USER,
+  pass: process.env.EMAIL_PASS,
+  port: 993,
+  host: 'imap.gmail.com',
+  secure: true
+};
+// checkSettings();
 
 async function fetchEmailsAsJSON() {
     const emails = [];
 
     try {
-        await client.connect();
-        const lock = await client.getMailboxLock('INBOX');
+        const client = new ImapFlow({
+        host: credentials.host,
+        port: credentials.port,
+        secure: credentials.secure,
+        tls: {
+            rejectUnauthorized: false
+        },
+        auth: {
+            user: credentials.email,
+            pass: credentials.pass // also fix typo from `passssss`
+        },
+        clientInfo: {
+            name: false,
+            'support-url': false,
+            vendor: false,
+            date: false
+        }
+    });
 
-        // Calculate date days ago
-        const since = new Date();
-        since.setDate(since.getDate() - 7);
-        const imapDate = since.toISOString().split('T')[0];
+      await client.connect(); // ✅ safe to call now
+      const lock = await client.getMailboxLock('INBOX');
 
-        try {
-            // Search for emails since the date
-            const uids = await client.search({ since: imapDate });
+      // Calculate date days ago
+      const since = new Date();
+      since.setDate(since.getDate() - 7);
+      const imapDate = since.toISOString().split('T')[0];
 
-            if (uids.length === 0) {
-                console.log('📭 No emails found during however many days you set.');
-            }
+      try {
+          // Search for emails since the date
+          const uids = await client.search({ since: imapDate });
 
-            for await (let message of client.fetch(uids, { envelope: true, source: true })) {
-                const emailObj = {
-                    uid: message.uid,
-                    subject: message.envelope.subject,
-                    from: message.envelope.from.map(f => f.address).join(', '),
-                    to: message.envelope.to?.map(t => t.address).join(', ') || '',
-                    date: message.envelope.date,
-                    raw: message.source.toString()
-                };
-                emails.push(emailObj);
-            }
+          if (uids.length === 0) {
+              console.log('📭 No emails found during however many days you set.');
+          }
+
+          for await (let message of client.fetch(uids, { envelope: true, source: true })) {
+              const emailObj = {
+                  uid: message.uid,
+                  subject: message.envelope.subject,
+                  from: message.envelope.from.map(f => f.address).join(', '),
+                  to: message.envelope.to?.map(t => t.address).join(', ') || '',
+                  date: message.envelope.date,
+                  raw: message.source.toString()
+              };
+              emails.push(emailObj);
+          }
         } finally {
             lock.release();
-        }        await client.logout();
+            await client.logout();
+        }
         
         // Create CSV content
         const csvHeaders = ['UID', 'Subject', 'From', 'To', 'Date', 'Raw'];

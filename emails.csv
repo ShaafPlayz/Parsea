@@ -1,260 +1,4 @@
 UID,Subject,From,To,Date,Raw
-81704,Daily Deal: Top-rated standing desk under $100! 🤯,n********r@e.bestbuy.ca,m*******f@gmail.com,2025-06-12T09:52:30.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3096755wrr;
-        Thu, 12 Jun 2025 02:53:53 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IEB9DclWgXQaqoDiPDGLCaI6h2zxPmdHNDqLufETPHR/Bwrk3pbuf0nMJi7W2dsMPApxsxI
-X-Received: by 2002:a05:6214:519b:b0:6f2:d25e:8f60 with SMTP id 6a1803df08f44-6fb34654f2dmr41126696d6.22.1749721961419;
-        Thu, 12 Jun 2025 02:52:41 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749721961; cv=none;
-        d=google.com"
-81705,"Shaaf, RADAR spots are filling fast",t**m@datacamp.com,m*******f@gmail.com,2025-06-12T11:35:03.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3135224wrr;
-        Thu, 12 Jun 2025 04:35:24 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IHTqLWHIGEQpNf/wdA84N7UrnAC+ZLZ6mY1FoECgSVrqc4AEFoj1zfghdU8iKFpAKkVTFnR
-X-Received: by 2002:a05:622a:2619:b0:4a3:5ba8:4978 with SMTP id d75a77b69052e-4a722968e8cmr52306101cf.21.1749728104306;
-        Thu, 12 Jun 2025 04:35:04 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749728104; cv=none;
-        d=google.com"
-81706,Fake Gavin,**@email.dailywire.com,m*******f@gmail.com,2025-06-12T11:31:31.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3138444wrr;
-        Thu, 12 Jun 2025 04:44:19 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IG3eIG59oRecte7KuITFBTfFxr5DdJlWPewd4NuLVmGEceK0ZusTtryCl8zBikLFF15pFd7
-X-Received: by 2002:a05:6214:cc5:b0:6fa:fb4f:b582 with SMTP id 6a1803df08f44-6fb34d2831emr34302606d6.6.1749728658931;
-        Thu, 12 Jun 2025 04:44:18 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749728658; cv=none;
-        d=google.com; "
-81707,“software engineer”: Leonardo Worldwide Corporation - Co-op Software Developer and more,j***************y@linkedin.com,m*******f@gmail.com,2025-06-12T12:45:41.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3164739wrr;
-        Thu, 12 Jun 2025 05:45:43 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IGVZD2mj+4i2MULHvRimrVZaTQul/Lg9EPkXg23KfNxGf8tkQVG4XP47j1Zcab4mOC0Ma76
-X-Received: by 2002:a05:6808:11cf:b0:406:73ef:9d46 with SMTP id 5614622812f47-40a66a2e800mr2092165b6e.5.1749732343375;
-        Thu, 12 Jun 2025 05:45:43 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749732343; cv=none;
-        d=google.com;"
-81708,Celebrate a Dad Who Raised You Right,**@email.dailywire.com,m*******f@gmail.com,2025-06-12T13:01:37.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3170843wrr;
-        Thu, 12 Jun 2025 06:01:43 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IHFYaT1noFHq6KAJ8cfU9peNgdGVr5DrMly7xEc2lDF5dBlaZmI+Wen+sYpMjCfmUZxUxDA
-X-Received: by 2002:a05:620a:4514:b0:7d2:11a6:12fb with SMTP id af79cd13be357-7d3b36642d3mr468186485a.37.1749733302900;
-        Thu, 12 Jun 2025 06:01:42 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749733302; cv=none;
-        d=google.com"
-81709,Find the Right Student Loan for You!,u*****s@send-m.usnews.com,m*******f@gmail.com,2025-06-12T13:27:28.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3185333wrr;
-        Thu, 12 Jun 2025 06:28:46 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IHwlbRi2pZLqQZ+zczvOkMKkfLWNLQ+mkuFQQU0P8iNqb1pa7EoHpjYO9+iOEjTKgfiUTCx
-X-Received: by 2002:a17:902:e785:b0:235:e76c:4353 with SMTP id d9443c01a7336-23641b3f89cmr97720955ad.51.1749734926306;
-        Thu, 12 Jun 2025 06:28:46 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749734926; cv=none;
-        d=google.com;"
-81710,New listings for your search alerts,n******y@rentals.ca,m*******f@gmail.com,2025-06-12T13:48:30.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3194316wrr;
-        Thu, 12 Jun 2025 06:48:32 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IHGtWm7UeTWjJLkzGSziZZ49M5/6vU3jz+D0A4CQocuF8piPY6zn5XNYfZIwfqnR7eVzQwG
-X-Received: by 2002:a05:622a:411b:b0:494:9fc0:de3 with SMTP id d75a77b69052e-4a72431ad88mr45088491cf.32.1749736112596;
-        Thu, 12 Jun 2025 06:48:32 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749736112; cv=none;
-        d=google.com;"
-81711,My Dad is Faster Than Your Dad,m****r@from.k1speed.com,m*******f@gmail.com,2025-06-12T14:02:32.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3201140wrr;
-        Thu, 12 Jun 2025 07:03:27 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IEi1Oi3IQlJoebIka28qc74Nd6mWo5eOE/arsqg8r0jrye+f2LAG5ESiUPnkaSp7u/1TNq3
-X-Received: by 2002:a05:6902:1029:b0:e81:cf71:e0fd with SMTP id 3f1490d57ef6-e820c859440mr4353810276.26.1749736995866;
-        Thu, 12 Jun 2025 07:03:15 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749736995; cv=none;
-        d=google.com;"
-81712,Perfect Vacation Styles,n******y@emails.ca.skechers.com,m*******f@gmail.com,2025-06-12T14:03:01.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3202928wrr;
-        Thu, 12 Jun 2025 07:05:53 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IG+LHJye03minJ4TWpDB+qlfhFn4KpaxQneyxoWlsgcS/jiRUs7r/jHkLjmXCxEx3PIhAQJ
-X-Received: by 2002:a05:6808:1a05:b0:3f8:bbf3:3a18 with SMTP id 5614622812f47-40a660c33edmr2159081b6e.16.1749737153055;
-        Thu, 12 Jun 2025 07:05:53 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749737153; cv=none;
-        d=google.com"
-81713,Spend $125 💸 Get $30 to spend later,S*******k@email.sportchek.ca,m*******f@gmail.com,2025-06-12T14:13:21.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3209894wrr;
-        Thu, 12 Jun 2025 07:17:45 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IG9pom38Lm9il5PSa+S3QxMZGk+wk8RmtS2FHoSaEEG543hrcbFa80O0NvrU8jXEz9WaRea
-X-Received: by 2002:a05:620a:170b:b0:7ce:c600:b5e1 with SMTP id af79cd13be357-7d3a8804053mr1066190685a.11.1749737864503;
-        Thu, 12 Jun 2025 07:17:44 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749737864; cv=none;
-        d=google.co"
-81714,🔥 Deal alert! Huge savings on Samsung.,n********r@e.bestbuy.ca,m*******f@gmail.com,2025-06-12T14:26:18.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3215254wrr;
-        Thu, 12 Jun 2025 07:27:42 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IH88ABUeiyjKwGJRvACyXyuaJKcLdcleVud/8j9eGJ9ANDqvWT52mDZCnDFgmMr0eb5Sepe
-X-Received: by 2002:a05:620a:2490:b0:7cf:5352:b3f with SMTP id af79cd13be357-7d3a89a339emr1096943485a.46.1749738462213;
-        Thu, 12 Jun 2025 07:27:42 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749738462; cv=none;
-        d=google.com"
-81715,"Hey, even the best players get frustrated.",h***o@chess.com,m*******f@gmail.com,2025-06-12T14:49:46.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3225644wrr;
-        Thu, 12 Jun 2025 07:49:47 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IHSZgZ8VcrL93C+2z9GrGTzBUgi7biqfNTrbQLCBKzZf9a2M9klkQTBBniw/z3FNlz1YRPO
-X-Received: by 2002:a05:6214:5090:b0:6fa:ffff:b2ef with SMTP id 6a1803df08f44-6fb34eb074fmr63424056d6.36.1749739786996;
-        Thu, 12 Jun 2025 07:49:46 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749739786; cv=none;
-        d=google.com"
-81716,The HireReady Newsletter Vol. 51,t**m@hello.jobscan.co,m*******f@gmail.com,2025-06-12T14:59:10.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3229428wrr;
-        Thu, 12 Jun 2025 07:59:15 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IGcI8yUuPnIHqLzh9FEasrFCwedQv9t3tVYqddHHa8651cGIIi4fL9ym4lOaEtpp9Apn/7J
-X-Received: by 2002:a05:6214:d61:b0:6fa:c55e:869 with SMTP id 6a1803df08f44-6fb2c367d64mr128439356d6.23.1749740354747;
-        Thu, 12 Jun 2025 07:59:14 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749740354; cv=none;
-        d=google.com;"
-81717,🥤 Sip on bonus Scene+ points with Coca-Cola® & How to Train Your Dragon,c******x@campaigns.cineplex.com,m*******f@gmail.com,2025-06-12T15:01:56.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3231287wrr;
-        Thu, 12 Jun 2025 08:01:56 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IG1xtImrSTqbd5CfrChEC8cfz4HvE9OTfQ5NjwfUwiYp2+rqPfIBJRT1wFr+gqLWzhappnn
-X-Received: by 2002:a05:6871:29a:b0:2d6:b7f:1e6d with SMTP id 586e51a60fabf-2ea967b6fc8mr4264043fac.0.1749740516397;
-        Thu, 12 Jun 2025 08:01:56 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749740516; cv=none;
-        d=google.com; s"
-81718,Help Your Student Build the Right College List,u*****s@send-p.usnews.com,m*******f@gmail.com,2025-06-12T15:28:03.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3247430wrr;
-        Thu, 12 Jun 2025 08:29:32 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IE03sSowiyv8C5CdD27p8HsO4Tz8sFmdUt+Y783RaJbdUTu/pqrd41W+9raItb8J1B+Xyg1
-X-Received: by 2002:a05:6a21:900c:b0:1f3:1d13:96b3 with SMTP id adf61e73a8af0-21f9b9913bdmr4729052637.5.1749742171623;
-        Thu, 12 Jun 2025 08:29:31 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749742171; cv=none;
-        d=google.com;"
-81719,Meet the Men of Steel in Toronto,n***********s@mail.fanexpohq.com,m*******f@gmail.com,2025-06-12T15:34:39.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3250370wrr;
-        Thu, 12 Jun 2025 08:34:56 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IEwBpwDY4BpsKHcv4bO3q+69zJIVPS6PXrRhkLZPZui8kIWCkEzutEWXfxYj25xDqV9aO+S
-X-Received: by 2002:a5d:5f92:0:b0:3a4:ed62:c7e2 with SMTP id ffacd0b85a97d-3a5679e08e3mr394307f8f.28.1749742496226;
-        Thu, 12 Jun 2025 08:34:56 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749742496; cv=none;
-        d=google.com; s="
-81720,Launch your new site before summer officially starts 🌞,h***o@b12.io,m*******f@gmail.com,2025-06-12T16:43:23.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3286390wrr;
-        Thu, 12 Jun 2025 09:43:23 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IE5pWXjpHW+tdn0fsDcykJdABzsgQEAO0dossSt+Fu3K0ekcepN43fazC0T/CaTEyK/8OBk
-X-Received: by 2002:a05:620a:400e:b0:7ca:f65b:c341 with SMTP id af79cd13be357-7d3a89fea67mr1169552185a.52.1749746603328;
-        Thu, 12 Jun 2025 09:43:23 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749746603; cv=none;
-        d=google.co"
-81721,"""Extern was the first thing on my resume...""",c*******y@extern.com,m*******f@gmail.com,2025-06-12T17:13:50.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3300604wrr;
-        Thu, 12 Jun 2025 10:13:53 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IG0VUi7+FD1TAEONS9qceSr3EuC4mtR4zOVE0VbIhuQZte4ey3TXro4KFLyYugWjvUsRC6z
-X-Received: by 2002:a05:620a:178b:b0:7d3:a7a7:27ad with SMTP id af79cd13be357-7d3bc4b6f42mr10287085a.37.1749748432719;
-        Thu, 12 Jun 2025 10:13:52 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749748432; cv=none;
-        d=google.com;"
-81722,"All your passions await, from cars to cards 🔥",e**y@reply.ebay.ca,m*******f@gmail.com,2025-06-12T17:16:26.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3301859wrr;
-        Thu, 12 Jun 2025 10:16:28 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IH9JKWvkUX4l/8OebL4QgCXBzP3uL2bge24CMtk4j/wovQAn1unyJhIIVpMhKi09kh6TWlA
-X-Received: by 2002:a05:6a00:1142:b0:742:a334:466a with SMTP id d2e1a72fcca58-7488f70261cmr135830b3a.12.1749748587975;
-        Thu, 12 Jun 2025 10:16:27 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749748587; cv=none;
-        d=google.com;"
-81723,Just dropped: your new offers ✨,n*****y@email.pcoptimum.ca,m*******f@gmail.com,2025-06-12T17:19:17.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3303374wrr;
-        Thu, 12 Jun 2025 10:19:29 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IHRgaDtsmffxYkm8Hb6mEzUwJ7Tr8R/JthV+aYTqDuHnmNUKYDKJH9SI4AMGxjdWMrribns
-X-Received: by 2002:a05:620a:25d0:b0:7ce:f094:3ec9 with SMTP id af79cd13be357-7d3b2c6d450mr584287585a.5.1749748769214;
-        Thu, 12 Jun 2025 10:19:29 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749748769; cv=none;
-        d=google.com;"
-81724,From serverless to speed builds: test your skills now,s*****t@devpost.com,m*******f@gmail.com,2025-06-12T17:28:48.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3307570wrr;
-        Thu, 12 Jun 2025 10:28:49 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IEiJ+yAed83QRIsWdRdQpCJaCzcuQIKfwrR7/XG5CXgvfflwSgEbIwYQoUfZ5aXRvglfZk9
-X-Received: by 2002:a05:6a21:68f:b0:21f:4ecc:11a9 with SMTP id adf61e73a8af0-21faa53a938mr557050637.32.1749749329279;
-        Thu, 12 Jun 2025 10:28:49 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749749329; cv=none;
-        d=google.com; "
-81725,adidas x Minecraft is here,a****s@us-news.adidas.com,m*******f@gmail.com,2025-06-12T19:24:34.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3352950wrr;
-        Thu, 12 Jun 2025 12:24:36 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IHyAXpUD0qYq/dOpezVFs4LM3UPKMM/FOV8940IISpl68kHfx2W1lySN5cSIiNZ1fW5IzlT
-X-Received: by 2002:a05:620a:2903:b0:7d3:8f29:84e3 with SMTP id af79cd13be357-7d3bc496181mr77473885a.44.1749756275763;
-        Thu, 12 Jun 2025 12:24:35 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749756275; cv=none;
-        d=google.com;"
-81726,"Oh, heyyy. Here's 10% off 3 rides 🤩",n******y@marketing.lyftmail.com,m*******f@gmail.com,2025-06-12T20:22:18.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3374083wrr;
-        Thu, 12 Jun 2025 13:22:20 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IG+ynGybIoz9vcUQJTgeO4jWDmRMA6Nt80UuPB2/9ABy8Nc7Ae24/pKwSCiUbaAmA/7ceXV
-X-Received: by 2002:a17:903:41cf:b0:234:9092:9dda with SMTP id d9443c01a7336-2365da07967mr6016975ad.24.1749759739764;
-        Thu, 12 Jun 2025 13:22:19 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749759739; cv=none;
-        d=google.com; "
-81727,Never miss a dad moment with Hopp 💚,c****a@rides.gethopp.com,m*******f@gmail.com,2025-06-12T20:27:53.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3375950wrr;
-        Thu, 12 Jun 2025 13:27:56 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IFKQClXVesWkeztmc4BoWhweL53phNrLmC3ly8mOPP+zkW6YzTiNjPItJA27zS8IeEOKr27
-X-Received: by 2002:a05:6902:1891:b0:e7d:c87a:6264 with SMTP id 3f1490d57ef6-e821c015eaamr606451276.6.1749760075725;
-        Thu, 12 Jun 2025 13:27:55 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749760075; cv=none;
-        d=google.com; s"
-81728,Launch your Product Manager career with Microsoft 🚀,C******a@m.learn.coursera.org,m*******f@gmail.com,2025-06-12T20:36:37.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3379295wrr;
-        Thu, 12 Jun 2025 13:36:40 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IFU9HpOIMffKvmqxCcWw2He68RkmccUEHRQUcZBweTOyE53ackzm+dXygwHOTGQdj1/SR08
-X-Received: by 2002:a05:6902:114f:b0:e81:2d89:4f with SMTP id 3f1490d57ef6-e821c0760aemr683549276.13.1749760600113;
-        Thu, 12 Jun 2025 13:36:40 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749760600; cv=none;
-        d=google.com; s="
-81729,Dayforce is hiring a Product & AI Intern 4 or 8 months - Fall 2025,j***********s@linkedin.com,m*******f@gmail.com,2025-06-12T20:45:36.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3382275wrr;
-        Thu, 12 Jun 2025 13:45:48 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IHaZU/fpW7ShFXCvhOkkUwDXnLTUgrycZVtYgp/KdU1Seyr5M4G2LDQr5hOKjxg5jGYGx+D
-X-Received: by 2002:a05:6830:2110:b0:727:3303:7ea8 with SMTP id 46e09a7af769-73a271aefedmr182353a34.25.1749761137360;
-        Thu, 12 Jun 2025 13:45:37 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749761137; cv=none;
-        d=google.com; "
-81730,Summer Memories Begin at Sheraton Fallsview!,n********r@sheratonfallsview.email,M*******F@gmail.com,2025-06-12T21:03:18.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3388677wrr;
-        Thu, 12 Jun 2025 14:03:26 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IFbX7hmUQIfgs3NT39T6FeuRFACAjdAezgUKr2KOySv8bSJp/r5YKYHi+/O0fxsvUEMIFpm
-X-Received: by 2002:a05:600c:3f16:b0:450:d104:29eb with SMTP id 5b1f17b1804b1-45334ab20e4mr4705165e9.5.1749762206323;
-        Thu, 12 Jun 2025 14:03:26 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749762206; cv=none;
-        d=google.com; "
-81731,Just Days Left to Save 40% for Father’s Day,**@email.dailywire.com,m*******f@gmail.com,2025-06-12T22:04:51.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3410798wrr;
-        Thu, 12 Jun 2025 15:04:52 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IFPkAXGLyF4l9iPm6pR9UKqnaO08WKdYujXmTSikMP8OIelkLbe1FIZFBfsqhr/CTUJUmNQ
-X-Received: by 2002:a05:622a:2296:b0:4a4:31e2:2e77 with SMTP id d75a77b69052e-4a72ffdd088mr15948941cf.50.1749765892277;
-        Thu, 12 Jun 2025 15:04:52 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749765892; cv=none;
-        d=google.com"
-81732,You have an invitation,i*********s@linkedin.com,m*******f@gmail.com,2025-06-12T22:45:22.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3424107wrr;
-        Thu, 12 Jun 2025 15:45:23 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IHsj+QwqEi+3jW4xjOHf3Qkq/8Ax9ip+g3spsJ12heFC/+6B+YpY0LXvRZVCsBXId+heWmq
-X-Received: by 2002:a17:90b:2e48:b0:311:ff18:b83e with SMTP id 98e67ed59e1d1-313d9c2eefamr1362993a91.9.1749768323463;
-        Thu, 12 Jun 2025 15:45:23 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749768323; cv=none;
-        d=google.com; "
-81733,You have been referred to a position at Ciena,c***a@myworkday.com,m*******f@gmail.com,2025-06-12T23:06:03.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3430521wrr;
-        Thu, 12 Jun 2025 16:06:04 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IGNA0/i2rdM0taNa9TOsIF2LNjiGYmrtOwfnDb3/ettjxffQufUb55y2zpYd669XIzI6hVU
-X-Received: by 2002:a05:6a00:1706:b0:746:199d:525f with SMTP id d2e1a72fcca58-7488f63c5f8mr1390002b3a.7.1749769563694;
-        Thu, 12 Jun 2025 16:06:03 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749769563; cv=none;
-        d=google.com;"
-81734,Ben Reacts to Dem Senator Being Handcuffed!,**@email.dailywire.com,m*******f@gmail.com,2025-06-12T23:32:35.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:a5d:43c7:0:b0:3a3:6387:ba61 with SMTP id v7csp3438465wrr;
-        Thu, 12 Jun 2025 16:32:35 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IHaNGspViO/GQjd0eyiUWLi+QKxI9h5FRYxdcru89PAEsonp/ydlW3y/yyze2TowBpl6oGl
-X-Received: by 2002:a05:620a:244c:b0:7d2:139b:a994 with SMTP id af79cd13be357-7d3bc476950mr155947485a.34.1749771155628;
-        Thu, 12 Jun 2025 16:32:35 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749771155; cv=none;
-        d=google.com"
-81735,Interac e-Transfer: You've received $800.00 from Adrit Panday and it has been automatically deposited.,n****y@payments.interac.ca,m*******f@gmail.com,2025-06-13T02:13:53.000Z,"Delivered-To: m*******f@gmail.com
-Received: by 2002:adf:b64c:0:b0:3a3:6387:ba61 with SMTP id i12csp7693wre;
-        Thu, 12 Jun 2025 19:13:54 -0700 (PDT)
-X-Google-Smtp-Source: AGHT+IH3Q+LCmCRhFin2xy7DRtkkD5S+m8Z8LTmuSL0lSiCQT8ciekLVKXM91+N/dAWkSlbchmjg
-X-Received: by 2002:a05:620a:1b9b:b0:7d3:8d2e:1f69 with SMTP id af79cd13be357-7d3bc3db51amr262685885a.17.1749780833821;
-        Thu, 12 Jun 2025 19:13:53 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1749780833; cv=none;
-        d=google.com; "
 81736,[GitHub] A third-party GitHub Application has been added to your account,n*****y@github.com,m*******f@gmail.com,2025-06-13T05:06:18.000Z,"Delivered-To: m*******f@gmail.com
 Received: by 2002:adf:b64c:0:b0:3a3:6387:ba61 with SMTP id i12csp48332wre;
         Thu, 12 Jun 2025 22:06:29 -0700 (PDT)
@@ -1649,3 +1393,300 @@ X-Received: by 2002:a05:6e02:4406:20b0:3de:2023:7f1d with SMTP id e9e14a558f8ab-
         Wed, 18 Jun 2025 20:03:35 -0700 (PDT)
 ARC-Seal: i=2; a=rsa-sha256; t=1750302215; cv=pass;
         d=google.com"
+81911,Application Confirmation: Business Operations Co-op Analyst (8 months) (38896),u*******p@utoronto.ca,s**********f@mail.utoronto.ca,2025-06-19T05:18:45.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp60900wrf;
+        Wed, 18 Jun 2025 22:18:50 -0700 (PDT)
+X-Forwarded-Encrypted: i=3; AJvYcCUX/HwgaTLzGew7XgMQqgBSUhtB5bBPJdsXA+xP0PcXLz8IYBXCUPbSchEeVnSpqBM5HUC8cLBvR48=@gmail.com
+X-Google-Smtp-Source: AGHT+IHZqUv4Th4WIA+ynkk3nE8y47Wic/ZmuNtjEuJ9/zYwy/1kr1M0j/RfiggVPJt5WVNEzq98
+X-Received: by 2002:a05:6902:1b8a:b0:e81:4f52:9983 with SMTP id 3f1490d57ef6-e841bd2f037mr3070216276.19.1750310330412;"
+81912,Application Confirmation: Business Operations Co-op Analyst (4 months) (38895),u*******p@utoronto.ca,s**********f@mail.utoronto.ca,2025-06-19T05:19:37.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp61091wrf;
+        Wed, 18 Jun 2025 22:19:41 -0700 (PDT)
+X-Forwarded-Encrypted: i=3; AJvYcCVDOQJe89ZhfiGLHF872zjGPE/+D1phloPpHBCW3eaBljCu0CZBW5LwdvLj093cDNYKa8IJZnRvIVU=@gmail.com
+X-Google-Smtp-Source: AGHT+IG3bRWu5yiITaOOLW2I3SNNq8njOZ/O/Iny/6gWTQm+GsHL8jm3EIik+A52u3ATzS+9sQ9J
+X-Received: by 2002:a05:6e02:2189:b0:3dd:dd39:324c with SMTP id e9e14a558f8ab-3de07cff90dmr229807945ab.9.1750310381380;"
+81913,Application Confirmation: Data Co-op (12 months) (38900),u*******p@utoronto.ca,s**********f@mail.utoronto.ca,2025-06-19T05:22:53.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp61920wrf;
+        Wed, 18 Jun 2025 22:22:56 -0700 (PDT)
+X-Forwarded-Encrypted: i=3; AJvYcCW2THbCoM/kwlWnZ4ZYPKQfuN363frWHwfPbkQ5LFYzJ/o4NUbEVcIOLN+CaTDKX6e2QDxLdLdxJLc=@gmail.com
+X-Google-Smtp-Source: AGHT+IFK7h5l40KEiYlSQfxFTE/c4+kU7yRHNUAHV7q3aXOiGU8Yhhbe38/s5/cHnP5TfLj1WXCE
+X-Received: by 2002:a05:6902:1707:b0:e84:1ab1:b8d9 with SMTP id 3f1490d57ef6-e841ab1b990mr3948531276.3.1750310576218;
+"
+81914,Right now just $0.99/mo,n*********s@audible.ca,m*******f@gmail.com,2025-06-19T08:42:17.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp118404wrf;
+        Thu, 19 Jun 2025 01:42:18 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHpH9Uvewh8eoNV6ic7vgAew8WVFjTwiOrjT0/AO+Kf9K7a1UVMbaapbtKmDD7oKU7qoJJ4
+X-Received: by 2002:a05:6214:76b:b0:6f5:40a5:e07b with SMTP id 6a1803df08f44-6fb47774638mr275602686d6.26.1750322537738;
+        Thu, 19 Jun 2025 01:42:17 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750322537; cv=none;
+        d=google.com;"
+81915,New listings for your search alerts,n******y@rentals.ca,m*******f@gmail.com,2025-06-19T10:19:38.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp149028wrf;
+        Thu, 19 Jun 2025 03:19:40 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHajMNpycBj0AgYKqFGL0glHsbR9rXKwl9be88Cd2ENXXn90RW0IXG3RBg6lNoAwWTCaElv
+X-Received: by 2002:a05:620a:1713:b0:7d2:1509:752e with SMTP id af79cd13be357-7d3c6d02558mr3441855885a.58.1750328380609;
+        Thu, 19 Jun 2025 03:19:40 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750328380; cv=none;
+        d=google.com"
+81916,Discover this month’s must-have tech: your ultimate gadget guide.,n********r@e.bestbuy.ca,m*******f@gmail.com,2025-06-19T11:04:00.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp165389wrf;
+        Thu, 19 Jun 2025 04:08:05 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHbUdPwDhGIqZqaUPxRrhaX1jQer040+mWrzgdYdaVcCx1+4Q28ODoEM3u9khtVRO+4Yoku
+X-Received: by 2002:a05:620a:31a9:b0:7ce:b9ed:24dc with SMTP id af79cd13be357-7d3c6c1f5c4mr3130629185a.23.1750331285185;
+        Thu, 19 Jun 2025 04:08:05 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750331285; cv=none;
+        d=google.com"
+81917,Supreme Court Rules to Protect Children,**@email.dailywire.com,m*******f@gmail.com,2025-06-19T11:33:13.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp177630wrf;
+        Thu, 19 Jun 2025 04:39:16 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEer1lR77c8fCi4dVMEU4mbCjI/Hl6FllFncY9STT9P5ieY0FejYeW8ykq1BVg0bxFpqKou
+X-Received: by 2002:a05:620a:4105:b0:7c5:55f9:4bc1 with SMTP id af79cd13be357-7d3c6cf5e7emr2536972985a.42.1750333155529;
+        Thu, 19 Jun 2025 04:39:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750333155; cv=none;
+        d=google.com"
+81918,"[Instr Note] Guest Speaker Series , Starting Next Week",n******y@piazza.com,s**********f@mail.utoronto.ca,2025-06-19T11:55:35.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp183227wrf;
+        Thu, 19 Jun 2025 04:55:40 -0700 (PDT)
+X-Forwarded-Encrypted: i=3; AJvYcCVMNBDb9qjl/OwJSgQ8XwOEoE5dgEg3AUf4DPN2z5o39X1d4We+SRWbM6TbjRRbSioY5pmklMxGbfY=@gmail.com
+X-Google-Smtp-Source: AGHT+IHUy6vPgVUHcPdFXvS7LaUUPR06yBl+4F3MvPoJmnpU7C5Ex+1JNBoZTZFQgwjYWZpJFA1r
+X-Received: by 2002:a05:690c:a0a4:10b0:70e:345:d58a with SMTP id 00721157ae682-712b48c316amr32295887b3.2.1750334140173"
+81919,Get Ready to Change the Way You Create and Deliver Content,i**o@m.madcapsoftware.com,s**********f@mail.utoronto.ca,2025-06-19T12:01:42.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp185414wrf;
+        Thu, 19 Jun 2025 05:01:55 -0700 (PDT)
+X-Forwarded-Encrypted: i=3; AJvYcCWfxf7XB08zpfMJHbH/OWGb8lUgIiUNall6FkWzlCHGj/vcqIcgWeWxpPGyeIYkaKtW/aYvewzgxgs=@gmail.com
+X-Google-Smtp-Source: AGHT+IG3IXL8BRc3JTISvsIcMWImYDv8XqK+Uo/u7M5uhm1yC8rpoyw5dCIg5t7W3HDmekcX0iFH
+X-Received: by 2002:a05:6902:1505:b0:e84:1af0:96b7 with SMTP id 3f1490d57ef6-e841af09761mr4665740276.48.1750334515393;"
+81920,“software engineer”: Feathery - Frontend Engineer and more,j***************y@linkedin.com,m*******f@gmail.com,2025-06-19T12:46:28.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp203895wrf;
+        Thu, 19 Jun 2025 05:46:32 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IG1c8LVlUtxNN7HTWaDNJM8cl17kC5n4tDueIFwcgrdQbdlZvbAdulfOUjFfiOFobOySIoQ
+X-Received: by 2002:a05:6a00:9287:b0:736:3ea8:4813 with SMTP id d2e1a72fcca58-748f787ed21mr5141780b3a.2.1750337192054;
+        Thu, 19 Jun 2025 05:46:32 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750337192; cv=none;
+        d=google.com; "
+81921,Job Posting Insights (Week 7): COPB53H3 Y LEC01 20255:Continuing your Co-op Job Search,n***********s@instructure.com,s**********f@mail.utoronto.ca,2025-06-19T13:00:29.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp208650wrf;
+        Thu, 19 Jun 2025 06:00:33 -0700 (PDT)
+X-Forwarded-Encrypted: i=3; AJvYcCW3X5UdbI884OLkkdPtUUHec3qWiMaM7CCAB1ZWI46Q+x122cfHRD+3Dx/Sx+cfoxu5mDHW6Jxk9ow=@gmail.com
+X-Google-Smtp-Source: AGHT+IFUb92+AZ8KmT0SCWhzQDzJDfJg77a7ScM9lhWv7PS1uP3lA4g18tiHEWSiQ2IhdahklO+B
+X-Received: by 2002:a05:6602:3583:b0:86a:24a7:cecb with SMTP id ca18e2360f4ac-875ded2c67emr2900466639f.4.1750338033214"
+81922,The HireReady Newsletter Vol. 52,t**m@hello.jobscan.co,m*******f@gmail.com,2025-06-19T13:35:21.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp225721wrf;
+        Thu, 19 Jun 2025 06:35:44 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHUPFIPoWk5Y/8iYF2t+1wm/pTFKp/iuRYBTIrtaSsvy7jnpZmPJ1kyejR9u6hJaTNxP6+X
+X-Received: by 2002:a05:620a:4720:b0:7d3:b8d6:8cc5 with SMTP id af79cd13be357-7d3c6cf64d5mr3161311785a.44.1750340144157;
+        Thu, 19 Jun 2025 06:35:44 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750340144; cv=none;
+        d=google.com"
+81923,Don’t blink. You’ll miss this,t***s@kickresume.com,m*******f@gmail.com,2025-06-19T13:45:25.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp229370wrf;
+        Thu, 19 Jun 2025 06:45:26 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHW4ay1T/llWTNORM7qf4DtI+OS9ho1qdAuAwXy5PMFYARTuk4TZRxQBL5cNcux6NtdzzNk
+X-Received: by 2002:a05:620a:a10c:b0:7d3:db44:86bf with SMTP id af79cd13be357-7d3db44878fmr1592954585a.0.1750340726229;
+        Thu, 19 Jun 2025 06:45:26 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750340726; cv=none;
+        d=google.com;"
+81924,Get your perfect summer sandals today,n******y@emails.ca.skechers.com,m*******f@gmail.com,2025-06-19T14:02:42.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp240700wrf;
+        Thu, 19 Jun 2025 07:08:20 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEzY/w7JeWss5+bLiO2XxUSt0qMp5gSRGAlcTMUCNB3gstC+s/0lyaUlDuMlPTUBlft7nC8
+X-Received: by 2002:a05:6102:4b88:b0:4e7:db33:5725 with SMTP id ada2fe7eead31-4e7f632331bmr17950862137.3.1750342100612;
+        Thu, 19 Jun 2025 07:08:20 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750342100; cv=none;
+        d=google.com;"
+81925,You are so close to owing the latest Galaxy A Series.,s****************s@pk.email.samsung.com,m*******f@gmail.com,2025-06-19T14:10:53.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp242166wrf;
+        Thu, 19 Jun 2025 07:10:58 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGR8xUzInylmogkLfDaeKhdfsUuxFyJWYqjHYw+hSN948qewOcWi7O4rp9oTSdFB4O0ByN6
+X-Received: by 2002:a05:6402:430e:b0:608:3571:6942 with SMTP id 4fb4d7f45d1cf-608d0836151mr18754123a12.1.1750342258692;
+        Thu, 19 Jun 2025 07:10:58 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750342258; cv=none;
+        d=google.com;"
+81926,This week's top deals just dropped 🔥,S*******k@email.sportchek.ca,m*******f@gmail.com,2025-06-19T14:15:11.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp246930wrf;
+        Thu, 19 Jun 2025 07:19:15 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGQ+tmYDZAadH32pAvy3JUeRQriGNm5yv7T3U6XbpPmMzemaPZliVb5Q1/OwYAxqEVbx3Ye
+X-Received: by 2002:a05:620a:29d0:b0:7d3:a6f2:74f2 with SMTP id af79cd13be357-7d3c6cff068mr3585451585a.55.1750342755192;
+        Thu, 19 Jun 2025 07:19:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750342755; cv=none;
+        d=google.com"
+81927,COMING SOON: AI Maker bootcamp — learn to build with AI tools,l***n@itr.mail.codecademy.com,m*******f@gmail.com,2025-06-19T15:24:06.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp276734wrf;
+        Thu, 19 Jun 2025 08:24:07 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFw7LDbzu3pOe0HO0+nXhtmnH6cwWKBZZWUMd6wX6WEd5gWnKbZWpK88JawbpP6V91GQi2+
+X-Received: by 2002:a05:620a:7089:b0:7d3:f63c:7ee0 with SMTP id af79cd13be357-7d3f63c82c9mr213344885a.27.1750346647407;
+        Thu, 19 Jun 2025 08:24:07 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750346647; cv=none;
+        d=google.com;"
+81928,Gaming Guests Are Loading Into Toronto,n***********s@mail.fanexpohq.com,m*******f@gmail.com,2025-06-19T15:35:57.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp281830wrf;
+        Thu, 19 Jun 2025 08:36:04 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHFOWyWiDlXT2GvU+5hoxhIktz3pHRfkSSMdhUe2hJRzYcNkaqglVrbYwYCiBAeMBg5LNPR
+X-Received: by 2002:a05:6000:2f84:b0:3a5:1241:c1a3 with SMTP id ffacd0b85a97d-3a572e99653mr16963834f8f.50.1750347364205;
+        Thu, 19 Jun 2025 08:36:04 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750347364; cv=none;
+        d=google.com"
+81929,The BEST early-career advice 👀 👀 👀,c*******y@extern.com,m*******f@gmail.com,2025-06-19T16:01:53.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp291905wrf;
+        Thu, 19 Jun 2025 09:01:54 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHbd/yC1LGrVhs7vuVwDMxJvSItGbjbBsrTR6z5Jzth1M0eXETmmZ4LTx9vKNnvHsaNzOyi
+X-Received: by 2002:ac8:57cc:0:b0:477:6f6d:607a with SMTP id d75a77b69052e-4a73c575508mr301497761cf.7.1750348914045;
+        Thu, 19 Jun 2025 09:01:54 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750348914; cv=none;
+        d=google.com; s="
+81930,Keep it cool with all air conditioners on sale.¹,n********r@e.bestbuy.ca,m*******f@gmail.com,2025-06-19T16:06:06.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp296166wrf;
+        Thu, 19 Jun 2025 09:08:49 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IE5Q1uk/7teuyqC4AjA45kVmeelACW8XdU2zwnsQKY2tGhb4D6bbRSCEK4E5m1jcxa0w9Mb
+X-Received: by 2002:a05:620a:2a0f:b0:7d0:9f1e:40dc with SMTP id af79cd13be357-7d3c6d0caf4mr3514173085a.56.1750349328777;
+        Thu, 19 Jun 2025 09:08:48 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750349328; cv=none;
+        d=google.com"
+81931,You have an invitation,i*********s@linkedin.com,m*******f@gmail.com,2025-06-19T16:46:29.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp311482wrf;
+        Thu, 19 Jun 2025 09:46:30 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGsr4ppNZvPO32iuCL6vBSyI/SBtOBNZj6CK/wxE5LluEPrBWPLyfJsZQDeH7bGUQAvF6QV
+X-Received: by 2002:a17:903:1a30:b0:221:89e6:ccb6 with SMTP id d9443c01a7336-237cbf97f93mr62051395ad.25.1750351590114;
+        Thu, 19 Jun 2025 09:46:30 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750351590; cv=none;
+        d=google.com; "
+81932,"Save 20% on Lenovo tech, plus shop game-day picks",e**y@reply.ebay.ca,m*******f@gmail.com,2025-06-19T17:02:28.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp317517wrf;
+        Thu, 19 Jun 2025 10:02:30 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHv8Y1Srk9H+cTmm4N6932onhRskstpcXlCT1JBhunPxjfThK7b54Da+4eZq05fMO1TlI54
+X-Received: by 2002:a05:6512:4023:b0:553:ac79:161f with SMTP id 2adb3069b0e04-553b6f1b626mr6351347e87.28.1750352549979;
+        Thu, 19 Jun 2025 10:02:29 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750352549; cv=none;
+        d=google.com;"
+81933,Simplify Your Debt. Take Control Today,u*****s@send-m.usnews.com,m*******f@gmail.com,2025-06-19T17:24:21.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp327665wrf;
+        Thu, 19 Jun 2025 10:24:22 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEIZVt7Y4JYYwRwAdeJ36YXveq7pTSnJTdf5c2VAWg3mnTO5RyAmm4JjUIJLJjOHP7Gmxhe
+X-Received: by 2002:a17:902:ea0e:b0:236:9726:7261 with SMTP id d9443c01a7336-23697267e80mr154613215ad.39.1750353862259;
+        Thu, 19 Jun 2025 10:24:22 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750353862; cv=none;
+        d=google.com;"
+81934,🎉 It's Moredays – get new offers now!,n*****y@email.pcoptimum.ca,m*******f@gmail.com,2025-06-19T17:32:39.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp331700wrf;
+        Thu, 19 Jun 2025 10:35:21 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IF9D0tOC+DHcfwkbCx5P9qWc42T0XNo8TS+DVoTuLUmz6Hc9iiGejT0gj4jh96cvQAMHDjC
+X-Received: by 2002:a05:620a:4883:b0:7c5:5e05:df33 with SMTP id af79cd13be357-7d3f99566e5mr11453585a.51.1750354521102;
+        Thu, 19 Jun 2025 10:35:21 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750354521; cv=none;
+        d=google.com; "
+81935,Ideate and concept faster than ever,m**l@email.adobe.com,m*******f@gmail.com,2025-06-19T17:39:17.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp333123wrf;
+        Thu, 19 Jun 2025 10:39:24 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IH5XCpAPExYBEUlX3L66H8/FRDnZJ2j++JwYCNZZVZkGAVbCx3rzWifzNv3td+e8lbo0Ztm
+X-Received: by 2002:a17:902:ffce:b0:237:d25b:8f07 with SMTP id d9443c01a7336-237d25b8f74mr43626055ad.44.1750354763867;
+        Thu, 19 Jun 2025 10:39:23 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750354763; cv=none;
+        d=google.com; "
+81936,06/19/25 Daily Digest for MATB 41H3 on Piazza,n******y@piazza.com,s**********f@mail.utoronto.ca,2025-06-19T18:10:53.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp345390wrf;
+        Thu, 19 Jun 2025 11:10:59 -0700 (PDT)
+X-Forwarded-Encrypted: i=3; AJvYcCUWFjQHkkbmI2D6zl/eoL+ZjiNd6H8Zyo4WDTZnYYrF0EQJ+8fzpN5yLG2D0JWv5RMqshCsgL5SMNg=@gmail.com
+X-Google-Smtp-Source: AGHT+IFIQcm9eSzlN6+S+QEoFQQYABZKUmCUhT7ovBkbftQfwNMhEbqojU3uP19Cw4M+Zo2CCslS
+X-Received: by 2002:a92:ca4a:0:b0:3dd:d365:78bf with SMTP id e9e14a558f8ab-3de07da2f99mr253618435ab.22.1750356658849;"
+81937,Rack up 20 points for every $1 you spend!,n**s@news.sceneplus.ca,M*******f@gmail.com,2025-06-19T18:03:25.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp347583wrf;
+        Thu, 19 Jun 2025 11:16:36 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFOQ8VaWIJDrxvbNAXrj3lVncDWGL5tnVQJuMtegqte38020Bh8TxnnftydvPw8GhEK39s7
+X-Received: by 2002:ac8:5891:0:b0:4a4:3924:96b9 with SMTP id d75a77b69052e-4a77a25059emr1075891cf.52.1750356996641;
+        Thu, 19 Jun 2025 11:16:36 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750356996; cv=none;
+        d=google.com; s=a"
+81938,It’s Juneteenth. Don’t Panic.,**@email.dailywire.com,m*******f@gmail.com,2025-06-19T18:21:21.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp349309wrf;
+        Thu, 19 Jun 2025 11:21:21 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IHESONl/wyqbILWRYXBZ3cG1SDO61wm7U08m8+erhj7T5Hb7PCvgHapKVI0FL3NQ++GQZcr
+X-Received: by 2002:a05:622a:618c:b0:4a4:3bae:8dce with SMTP id d75a77b69052e-4a77a22ff33mr1541641cf.33.1750357281729;
+        Thu, 19 Jun 2025 11:21:21 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750357281; cv=none;
+        d=google.com; "
+81939,You have an invitation,i*********s@linkedin.com,m*******f@gmail.com,2025-06-19T18:46:36.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp357773wrf;
+        Thu, 19 Jun 2025 11:46:37 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IEzpzKwxZbJQ1Qc/EZR0VQp+gdm0SSgFHRXz1CrMv9KYuWqrlnQljsPUUtFIr5bzIV3BdDq
+X-Received: by 2002:a05:620a:4555:b0:7ce:bde3:583c with SMTP id af79cd13be357-7d3f98e02ddmr40240785a.17.1750358796959;
+        Thu, 19 Jun 2025 11:46:36 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750358796; cv=none;
+        d=google.com; "
+81940,Welcome to Big AI Energy,b*********y@substack.com,m*******f@gmail.com,2025-06-19T20:40:38.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp394148wrf;
+        Thu, 19 Jun 2025 13:40:40 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGRTfbZAQmD2DTLtd96xlQe53nmFJN3GoH8sbsz5IbtDJCt/9YPilJ9sa//JtAIFn2z+uHA
+X-Received: by 2002:ac8:5f84:0:b0:4a4:3b2f:cc30 with SMTP id d75a77b69052e-4a77a23c75dmr7228971cf.11.1750365639702;
+        Thu, 19 Jun 2025 13:40:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750365639; cv=none;
+        d=google.com; s=a"
+81941,Security alert,n******y@accounts.google.com,m*******f@gmail.com,2025-06-19T21:03:56.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp401090wrf;
+        Thu, 19 Jun 2025 14:03:57 -0700 (PDT)
+X-Received: by 2002:a05:6214:319c:b0:6f4:c422:53e7 with SMTP id 6a1803df08f44-6fd0a442292mr11055556d6.8.1750367037083;
+        Thu, 19 Jun 2025 14:03:57 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750367037; cv=none;
+        d=google.com; s=arc-20240605;
+        b=bpv8cfhoxGs2ztWSOTdD8xp0dVoVUDk0N0pK+fovGAU7NYGzB5U6xWvn05FfoNQweA
+     "
+81942,Security alert,n******y@accounts.google.com,m*******f@gmail.com,2025-06-19T21:04:02.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp401134wrf;
+        Thu, 19 Jun 2025 14:04:04 -0700 (PDT)
+X-Received: by 2002:a17:902:e88f:b0:236:6f5f:caaf with SMTP id d9443c01a7336-237d9742d6bmr4400035ad.15.1750367043646;
+        Thu, 19 Jun 2025 14:04:03 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750367043; cv=none;
+        d=google.com; s=arc-20240605;
+        b=X9Hjmswi4BdQGKLlTqNsVOaP1xI1zNS6ufZT521oGTh0mhrfaOIAaFWIGrMZehU4nH
+      "
+81943,Midterm Test: MATB41: Several Variables I,n***********s@instructure.com,s**********f@mail.utoronto.ca,2025-06-19T21:52:12.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp413914wrf;
+        Thu, 19 Jun 2025 14:52:16 -0700 (PDT)
+X-Forwarded-Encrypted: i=3; AJvYcCV3QoBAOJIU9JR0vrYeEUie1TA8QcA2/5K27VFsEPlW+cbi7XlU7GvDhUY0DFxNb4pX8taTdTo/DkY=@gmail.com
+X-Google-Smtp-Source: AGHT+IFMR/RbhrlEa+0gjEbeFixAQ4ZYUPTlTEfwq/+/OfSjHVWpbYRltywXYDYZUbIHQX41G2+x
+X-Received: by 2002:a05:6e02:2705:b0:3de:25cb:42cc with SMTP id e9e14a558f8ab-3de38ca4f27mr5044235ab.10.1750369935950;"
+81944,All Episodes of Parenting Are Now Streaming,**@email.dailywire.com,m*******f@gmail.com,2025-06-19T22:14:35.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp420990wrf;
+        Thu, 19 Jun 2025 15:14:35 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGZIddFn9j8/T6mhPsltacV0w/oKG0tQhNiugjkzP0RUDkkzL21ExktW6fQ4OrZZztY4tYp
+X-Received: by 2002:a05:622a:1988:b0:4a6:f0d0:d4af with SMTP id d75a77b69052e-4a77c35f380mr1032221cf.16.1750371275529;
+        Thu, 19 Jun 2025 15:14:35 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750371275; cv=none;
+        d=google.com; "
+81945,⏰HOURS LEFT!,i**o@e.shoppersdrugmart.ca,m*******f@gmail.com,2025-06-19T22:23:27.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp424397wrf;
+        Thu, 19 Jun 2025 15:26:15 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGHj5k5SG2VBSfigHeii4rx1oo01RfiE3M8cRNJlW/YzAmImUrbVpbZH6dC/tCPzFnNaVZ4
+X-Received: by 2002:a05:620a:3726:b0:7c3:d7ef:f7f5 with SMTP id af79cd13be357-7d3f98e8ce4mr131676685a.18.1750371974682;
+        Thu, 19 Jun 2025 15:26:14 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750371974; cv=none;
+        d=google.com;"
+81946,Interac e-Transfer sent,i********s@scotiabank.com,M*******f@gmail.com,2025-06-20T00:21:15.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp455100wrf;
+        Thu, 19 Jun 2025 17:21:20 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IGkv4xU8HvtE+p/uqGNph72F6a2cjZg5IAUaHce5mkKzr1D6lmlwVBjwnsjlPhWTikhyFPY
+X-Received: by 2002:a05:6a21:999b:b0:21f:5aa1:3102 with SMTP id adf61e73a8af0-22026fea096mr937646637.37.1750378879959;
+        Thu, 19 Jun 2025 17:21:19 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750378879; cv=none;
+        d=google.com; "
+81947,"Interac e-Transfer: Your $1,000.00 transfer to MUHAMMAD FATIR has been successfully deposited.",c***h@payments.interac.ca,m*******f@gmail.com,2025-06-20T00:21:27.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp455138wrf;
+        Thu, 19 Jun 2025 17:21:28 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IFII+BFFZrJXbVjS19Uz2dlE9ifXtCpzpTS2vN8BHV60zpA8glqewfMctToLIj9YSXpk6Ew
+X-Received: by 2002:a05:6214:318d:b0:6fa:bb26:1459 with SMTP id 6a1803df08f44-6fd0a44eb39mr21351126d6.7.1750378888186;
+        Thu, 19 Jun 2025 17:21:28 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750378888; cv=none;
+        d=google.com; "
+81948,Autoload receipt / Reçu de chargement automatique,p**********r@prestocard.ca,m*******f@gmail.com,2025-06-20T00:33:14.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp458131wrf;
+        Thu, 19 Jun 2025 17:33:16 -0700 (PDT)
+X-Google-Smtp-Source: AGHT+IE/IOkfgntL0LerxhM8EKPmZLFRjJLxjuew+AOFHER34H9vGX/riUyyZ3S55acqB5Iwp0eB
+X-Received: by 2002:a17:903:1988:b0:236:93cb:48b with SMTP id d9443c01a7336-237d996a6c5mr12329735ad.44.1750379595904;
+        Thu, 19 Jun 2025 17:33:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1750379595; cv=none;
+        d=google.com; s"
+81949,"Fw: Job and Event Postings: June 16-20, 2025",m*****r@mail.utoronto.ca,s**********f@mail.utoronto.ca,2025-06-20T01:37:40.000Z,"Delivered-To: m*******f@gmail.com
+Received: by 2002:a5d:5888:0:b0:3a3:6387:ba61 with SMTP id n8csp475433wrf;
+        Thu, 19 Jun 2025 18:37:48 -0700 (PDT)
+X-Forwarded-Encrypted: i=3; AJvYcCURpqxH0Se7SSmZ3kjuyU5k9gMps9kNT1PhkSe9WEWmI+15Z+YCusfaP+yWDqepyHDmBQMonj9/fyM=@gmail.com
+X-Google-Smtp-Source: AGHT+IHsaVBuZHVpAyrR0ouGc9BYZBmFLvrOp2D08jFGzn70RmLJzwTgx1nXkK3deXgj8ZjHyTZW
+X-Received: by 2002:a05:6902:260c:b0:e84:9f6:7bd5 with SMTP id 3f1490d57ef6-e842bd48f88mr1544260276.44.1750383468398;"

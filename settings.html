@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Parsea - Settings</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="settings.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+    </style>
+  </head>  <body>
+    <div class="app-container">
+      <!-- Left Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <h1 class="sidebar-title">Settings</h1>
+          <button type="button" id="backBtn" class="btn-icon" title="Back to Main">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+          </button>
+        </div>
+          <nav class="sidebar-nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#email-config" class="nav-link active" data-section="email-config">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                Email Configuration
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#connection-status" class="nav-link" data-section="connection-status">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                  <circle cx="12" cy="12" r="3"/>
+                </svg>
+                Connection Status
+              </a>
+            </li>
+          </ul>
+        </nav>
+        
+        <!-- System Information in Sidebar -->
+        <div class="sidebar-system-info">
+          <div class="system-info-header">
+            <h3 class="system-info-title">System Info</h3>
+          </div>
+          <div class="system-info-content">
+            <div class="system-info-item">
+              <span class="system-info-label">Version</span>
+              <span class="system-info-value">1.0.0</span>
+            </div>
+            <div class="system-info-item">
+              <span class="system-info-label">Updated</span>
+              <span class="system-info-value" id="sidebarLastUpdated">Never</span>
+            </div>
+            <div class="system-info-item">
+              <span class="system-info-label">Developer</span>
+              <span class="system-info-value">Shaaf Yousaf</span>
+            </div>
+            <div class="system-info-item">
+              <span class="system-info-label">Build</span>
+              <span class="system-info-value">Production</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="content-container">        
+        <!-- Email Configuration Section -->
+        <section id="email-config" class="content-section active">
+          <div class="section-header">
+            <h2 class="section-title">Email Configuration</h2>
+            <p class="section-description">Enter your email credentials to connect to your email server</p>
+          </div>
+          
+          <div class="card">
+            <div class="card-content">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="emailInput" class="form-label">Email Address</label>
+                  <input type="email" id="emailInput" placeholder="your.email@example.com" class="form-input">
+                </div>
+                
+                <div class="form-group">
+                  <label for="passwordInput" class="form-label">Password</label>
+                  <input type="password" id="passwordInput" placeholder="Enter your password" class="form-input">
+                  <p class="form-hint">For Gmail users, use an App Password instead of your regular password</p>
+                </div>
+                
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="serverInput" class="form-label">IMAP Server</label>
+                    <input type="text" id="serverInput" placeholder="imap.gmail.com" class="form-input">
+                  </div>
+                  
+                  <div class="form-group">
+                    <label for="portInput" class="form-label">Port</label>
+                    <input type="number" id="portInput" placeholder="993" class="form-input" value="993">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label class="checkbox-wrapper">
+                    <input type="checkbox" id="secureInput" checked>
+                    <span class="checkbox-checkmark"></span>
+                    Use SSL/TLS (Recommended)
+                  </label>
+                </div>
+                
+                <div class="form-actions">
+                  <button type="button" id="saveBtn" class="btn btn-primary">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/>
+                      <polyline points="17,21 17,13 7,13 7,21"/>
+                      <polyline points="7,3 7,8 15,8"/>
+                    </svg>
+                    Save Configuration
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Connection Status Section -->
+        <section id="connection-status" class="content-section">
+          <div class="section-header">
+            <h2 class="section-title">Connection Status</h2>
+            <p class="section-description">Test your email server connection</p>
+          </div>
+          
+          <div class="card">
+            <div class="card-content">
+              <div class="status-grid">
+                <div class="status-item">
+                  <span class="status-label">Server Status</span>
+                  <span class="status-value" id="connectionStatus">Not Connected</span>
+                </div>
+                <div class="status-item">
+                  <span class="status-label">Last Check</span>
+                  <span class="status-value" id="lastCheckStatus">Never</span>
+                </div>
+              </div>
+              
+              <div class="test-section">
+                <button type="button" id="testConnectionBtn" class="btn btn-outline">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                    <polyline points="22,4 12,14.01 9,11.01"/>
+                  </svg>
+                  Test Connection
+                </button>
+              </div>
+            </div>
+          </div>        </section>
+
+      </div>
+    </main>
+    
+    </div>
+    
+    <script src="settings.js"></script>
+  </body>
+</html>

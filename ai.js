@@ -2,7 +2,7 @@ const { CohereClientV2 } = require('cohere-ai');
 const fs = require('fs');
 require('dotenv').config();
 
-const { fetchEmailsAsJSON } = require('./IMAP'); // Import module code
+
 
 
 const cohere = new CohereClientV2({ 
@@ -12,7 +12,7 @@ const cohere = new CohereClientV2({
 async function classifyEmail() {
   // Fetch fresh emails from the server (saves to CSV)
   
-  await fetchEmailsAsJSON();
+  
   // Read emails from CSV file
   const csvContent = fs.readFileSync('emails.csv', 'utf8');
   const csvLines = csvContent.split('\n');
@@ -79,9 +79,12 @@ async function classifyEmail() {
                 **Futher:**
                 "Title of email", "Title of email", "Title of email", "Title of email", etc..
                 
+                **Helper:**
+                "interview", "confirmation", "confirmation", "rejection", etc..
 
                 ANY EMAIL THAT DOES NOT FALL IN ANY OF THE ABOVE CATEGORIES, COUNT THEM IN THE OTHERS.
                 IGNORE THE LINKEDIN INVITATIONS BUT DO COUNT THEM IN OTHERS.
+                INCLUDE JOB POSTINGS IN OTHERS.
                 INPUT FORMAT: You will receive email data extracted from a CSV file containing recent emails from the user's inbox. Each email includes: Subject, From (sender), Date, and content.`    
         },
         {
