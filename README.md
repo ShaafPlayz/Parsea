@@ -1,6 +1,10 @@
 # Parsea
-#### A desktop tool that reads your inbox and flags job updates, so you don't waste time checking every email.
+#### A secure desktop tool that reads your inbox and flags job updates, so you don't waste time checking every email.
 ![Showcase](resources/showcase.gif)
+#### Parsea (CyberSecurity Update)
+![image](https://github.com/user-attachments/assets/31df741a-61a3-4699-a5a1-b32adba6300b)
+
+
 
 ## Features
 - Fetches recent emails from your inbox and saves them to a CSV file using IMAP
@@ -20,6 +24,11 @@
 - **Added advanced cybersecurity filter:** The app now removes emails that match common authentication code, OTP, or security code patterns before any AI processing. This helps protect sensitive information and keeps your dataset clean.
 
 ### Cybersecurity Filter Details
+
+#### CSV FILE AFTER FILERING:
+![image](https://github.com/user-attachments/assets/0284a69a-fb4b-4ff8-b6f1-59de1d9f0569)
+
+
 
 The filter removes emails whose subject or body matches any of these patterns:
 
