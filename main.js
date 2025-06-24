@@ -6,10 +6,31 @@ const { fetchEmailsAsJSON } = require('./IMAP'); // Import IMAP module
 const { classifyEmail } = require('./ai'); // Import your cohere code
 
 
+function checkSettings(){
+  try {
+    const data = fs.readFileSync(settingsPath, 'utf-8');
+    const settings = JSON.parse(data);
+    
+    credentials.email = settings.email;
+    credentials.host = settings.server;
+    credentials.pass = settings.password;
+    credentials.port = settings.port;
+    credentials.secure = settings.secure;
+
+  } catch (error) {
+    console.error('Error loading settings:', error);
+  }
+};
+
 let credentials = {
   email: process.env.EMAIL_USER,
-  pass: process.env.EMAIL_PASS
+  pass: process.env.EMAIL_PASS,
+  port: 993,
+  host: 'imap.gmail.com',
+  secure: true
 };
+
+
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -34,7 +55,24 @@ app.whenReady().then(() => {
 });
 
 app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') app.quit();
+  if (process.platform !== 'darwin') {
+    app.quit();
+  }
+});
+
+// Add this to handle child process cleanup
+app.on('before-quit', (event) => {
+  console.log('Electron app is about to quit. Checking for child processes...');
+  if (myChildProcess && !myChildProcess.killed) {
+    console.log('Terminating child process...');
+    myChildProcess.kill(); // Sends SIGTERM
+    // You might need to force kill after a timeout if it doesn't respond
+    // setTimeout(() => {
+    //   if (!myChildProcess.killed) {
+    //     myChildProcess.kill('SIGKILL');
+    //   }
+    // }, 2000);
+  }
 });
 
 // Check emails handler
@@ -68,9 +106,9 @@ ipcMain.handle('fetch-emails', async () => {
 });
 
 // for dev mode (live reload)
-require('electron-reload')(__dirname, {
-  electron: require(`${__dirname}/node_modules/electron`)
-});
+// require('electron-reload')(__dirname, {
+//   electron: require(`${__dirname}/node_modules/electron`)
+// });
 
 ipcMain.on('set-cred', (event, user, pass) => {
   credentials.email = user;
