@@ -11,6 +11,7 @@
 
 ## Recent Updates (June 27, 2025)
 - Refined UI
+- Removed Electron Menu Bar
 - Removed "Interview", "Offer", "Rejection" Option
 - Setup logic for planned MongoDB and React Integration
 - Setup LLM logic for other services options
