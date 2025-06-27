@@ -41,7 +41,7 @@ function createWindow() {
       contextIsolation: false
     }
   });
-
+  win.setMenu(null);
   win.loadFile('index.html');
 }
 
@@ -57,21 +57,6 @@ app.whenReady().then(() => {
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit();
-  }
-});
-
-// Add this to handle child process cleanup
-app.on('before-quit', (event) => {
-  console.log('Electron app is about to quit. Checking for child processes...');
-  if (myChildProcess && !myChildProcess.killed) {
-    console.log('Terminating child process...');
-    myChildProcess.kill(); // Sends SIGTERM
-    // You might need to force kill after a timeout if it doesn't respond
-    // setTimeout(() => {
-    //   if (!myChildProcess.killed) {
-    //     myChildProcess.kill('SIGKILL');
-    //   }
-    // }, 2000);
   }
 });
 

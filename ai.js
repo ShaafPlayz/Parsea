@@ -2,8 +2,39 @@ const { CohereClientV2 } = require('cohere-ai');
 const fs = require('fs');
 require('dotenv').config();
 
+const sel_service = 1;
 
 
+const llm = "command-a-03-2025"
+const sys_prompt = `You are an assistant that classifies job application–related emails. Your task is to read each email and assign it one of the following classifications based on its content:
+
+                - Updates — The email contains any job-related communication including interview invitations, job offers, rejection notifications, or any other significant updates about job applications.
+                - Confirmation — The email confirms receipt of an application, test, or other form submission.
+                - Other — Anything that doesn't fall into the above categories.
+
+
+                Start by writing a summary section:
+                **Summary Section:**
+                - Updates: #
+                - Confirmations: #
+                - Others: #
+                
+                Only then do the following:
+                Return the title of the email for the updates and confirmations. 
+                This is because I will be using this information to find that specific email.
+                DO NOT RETURN THE CONTENTS OF ANY EMAIL. 
+                FOLLOW THE FOLLOWING FORMAT:
+
+                **Futher:**
+                "Title of email", "Title of email", "Title of email", "Title of email", etc..
+                
+                **Helper:**
+                "updates", "confirmation", "confirmation", "updates", etc..
+
+                ANY EMAIL THAT DOES NOT FALL IN ANY OF THE ABOVE CATEGORIES, COUNT THEM IN THE OTHERS.
+                IGNORE THE LINKEDIN INVITATIONS BUT DO COUNT THEM IN OTHERS.
+                INCLUDE JOB POSTINGS IN OTHERS.
+                INPUT FORMAT: You will receive email data extracted from a CSV file containing recent emails from the user's inbox. Each email includes: Subject, From (sender), Date, and content.` 
 
 const cohere = new CohereClientV2({ 
   token: process.env.COHERE_API_KEY 
@@ -42,54 +73,26 @@ async function classifyEmail() {
   const emailsText = emails.map(email => 
     `Subject: ${email.subject}\nFrom: ${email.from}\nDate: ${email.date}\n---`
   ).join('\n\n');
-  
+
   const prompt = `Here are the emails to process: ${emailsText}`
+  
+  if (sel_service == 1) {
+    return await Cohere(prompt);
+  }
+}
 
-
-  const testPrompt = `Could you find the email from Workday HR ON June 13TH: ${emailsText}`
+async function Cohere(input) {
   try {
     const response = await cohere.chat({
-      model: "command-a-03-2025",
+      model: llm,
       messages: [
         {
           role: "system",
-          content: `You are an assistant that classifies job application–related emails. Your task is to read each email and assign it one of the following classifications based on its content:
-
-                - Interview — The email contains an invitation to interview.
-                - Offer — The email contains a job offer or intent to hire.
-                - Rejection — The email clearly states the application was unsuccessful.
-                - Confirmation — The email confirms receipt of an application, test, or other form submission.
-                - Other — Anything that doesn’t fall into the above categories.
-
-
-                Start by writing a summary section:
-                **Summary Section:**
-                - Rejections: #
-                - Confirmations: #
-                - Interviews: #
-                - Offers: #
-                - Others: #
-                
-                Only then do the following:
-                Return the title of the email for the interview, rejection, confirmation and, offer. 
-                This is because I will be using this information to find that specific email.
-                DO NOT RETURN THE CONTENTS OF ANY EMAIL. 
-                FOLLOW THE FOLLOWING FORMAT:
-
-                **Futher:**
-                "Title of email", "Title of email", "Title of email", "Title of email", etc..
-                
-                **Helper:**
-                "interview", "confirmation", "confirmation", "rejection", etc..
-
-                ANY EMAIL THAT DOES NOT FALL IN ANY OF THE ABOVE CATEGORIES, COUNT THEM IN THE OTHERS.
-                IGNORE THE LINKEDIN INVITATIONS BUT DO COUNT THEM IN OTHERS.
-                INCLUDE JOB POSTINGS IN OTHERS.
-                INPUT FORMAT: You will receive email data extracted from a CSV file containing recent emails from the user's inbox. Each email includes: Subject, From (sender), Date, and content.`    
+          content: sys_prompt   
         },
         {
           role: "user",
-          content: prompt
+          content: input
         }
       ],
       temperature: 0

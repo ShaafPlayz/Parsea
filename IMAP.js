@@ -57,7 +57,7 @@ async function fetchEmailsAsJSON() {
 
       // Calculate date days ago
       const since = new Date();
-      since.setDate(since.getDate() - 7);
+      since.setDate(since.getDate() - 1);
       const imapDate = since.toISOString().split('T')[0];
 
       try {

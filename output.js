@@ -106,10 +106,8 @@ async function formatAIResponse(text) {
 
     const lines = text.split('\n');
 
-    let rejections = 0;
+    let updates = 0;
     let confirmations = 0;
-    let interviews = 0;
-    let offers = 0;
     let other = 0;
 
     let line = 0;
@@ -122,14 +120,10 @@ async function formatAIResponse(text) {
             break; // Exit the loop early if "Futher" is found
         }
 
-        if (line.includes('Rejections:')) {
-            rejections = parseInt(line.split(":")[1].trim());
+        if (line.includes('Updates:')) {
+            updates = parseInt(line.split(":")[1].trim());
         } else if (line.includes('Confirmations:')) {
             confirmations = parseInt(line.split(':')[1].trim());
-        } else if (line.includes('Interviews:')) {
-            interviews = parseInt(line.split(':')[1].trim());
-        } else if (line.includes('Offers:')) {
-            offers = parseInt(line.split(':')[1].trim());
         } else if (line.includes('Other')) {
             other = parseInt(line.split(':')[1].trim());
         }
@@ -139,15 +133,11 @@ async function formatAIResponse(text) {
     analyzebutton.innerHTML = 'Crunching Numbers...';
     await sleep(50);
 
-    const rejc= document.getElementById('rejecount');
-    const interc= document.getElementById('intercount');
-    const offc= document.getElementById('offercount');
+    const updatesc = document.getElementById('updatecount');
     const confc= document.getElementById('confircount');
     const otherc= document.getElementById('othercount');
 
-    if (rejc) rejc.textContent = rejections;
-    if (interc) interc.textContent = interviews;
-    if (offc) offc.textContent = offers;
+    if (updatesc) updatesc.textContent = updates;
     if (confc) confc.textContent = confirmations;
     if (otherc) otherc.textContent = other;    // Update button for extracting titles
     analyzebutton.innerHTML = 'Extracting CSV Titles...';
@@ -304,12 +294,8 @@ async function loadCSVandMatchWithCategories(emailsWithCategories) {
     // Helper function to get category styling
     function getCategoryStyle(category) {
         switch(category.toLowerCase()) {
-            case 'interview':
-                return { color: '#1976d2', icon: '📋' };
-            case 'offer':
-                return { color: '#2e7d32', icon: '✅' };
-            case 'rejection':
-                return { color: '#c62828', icon: '❌' };
+            case 'updates':
+                return { color: '#1976d2', icon: '�' };
             case 'confirmation':
                 return { color: '#ef6c00', icon: '📧' };
             default:

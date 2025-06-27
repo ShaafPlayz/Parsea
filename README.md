@@ -48,7 +48,7 @@ This is implemented with regular expressions for robust detection. Only emails t
 - Fetches recent emails from your inbox and saves them to a CSV file using IMAP
 - Parses the CSV into structured email objects (subject, sender, date, etc.)
 - **Cybersecurity filter:** Automatically removes emails that appear to be authentication code, OTP, or security code messages using advanced pattern matching (see below)
-- Uses Cohere AI (Command-a-03-2025) to classify job application–related emails into categories: Interview, Offer, Rejection, Confirmation, and Other
+- Uses Cohere AI (Command-a-03-2025) to classify job application–related emails into categories: Updates, Confirmation, and Other
 - Returns only the titles of relevant emails for easy identification (no email contents are exposed)
 - Provides a summary count for each category in the AI response
 - Robust error handling for API and parsing issues

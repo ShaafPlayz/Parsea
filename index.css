@@ -145,7 +145,7 @@ body {
     inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
-/* Interview text styling - Blue */
+/* Updates text styling - Blue */
 .summary-item:nth-child(1) .summary-count {
   color: #2196f3;
   text-shadow: 0 0 10px rgba(33, 150, 243, 0.3);
@@ -155,43 +155,23 @@ body {
   color: #1976d2;
 }
 
-/* Offers text styling - Green */
-.summary-item:nth-child(2) .summary-count {
-  color: #4caf50;
-  text-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
-}
-
-.summary-item:nth-child(2) .summary-label {
-  color: #2e7d32;
-}
-
-/* Rejections text styling - Red */
-.summary-item:nth-child(3) .summary-count {
-  color: #f44336;
-  text-shadow: 0 0 10px rgba(244, 67, 54, 0.3);
-}
-
-.summary-item:nth-child(3) .summary-label {
-  color: #c62828;
-}
-
 /* Confirmations text styling - Orange */
-.summary-item:nth-child(4) .summary-count {
+.summary-item:nth-child(2) .summary-count {
   color: #ff9800;
   text-shadow: 0 0 10px rgba(255, 152, 0, 0.3);
 }
 
-.summary-item:nth-child(4) .summary-label {
+.summary-item:nth-child(2) .summary-label {
   color: #ef6c00;
 }
 
 /* Other text styling - Purple */
-.summary-item:nth-child(5) .summary-count {
+.summary-item:nth-child(3) .summary-count {
   color: #ab43bd;
   text-shadow: 0 0 10px rgba(156, 39, 176, 0.3);
 }
 
-.summary-item:nth-child(5) .summary-label {
+.summary-item:nth-child(3) .summary-label {
   color: #ab43bd;
 }
 
@@ -222,19 +202,9 @@ body {
   font-size: 1.1rem;
 }
 
-.category-interview {
+.category-updates {
   background-color: #e3f2fd;
   color: #1976d2;
-}
-
-.category-offer {
-  background-color: #e8f5e8;
-  color: #2e7d32;
-}
-
-.category-rejection {
-  background-color: #ffebee;
-  color: #c62828;
 }
 
 .category-other {
@@ -251,12 +221,8 @@ body {
   border-left: 4px solid;
 }
 
-.email-card.interview {
+.email-card.updates {
   border-left-color: #1976d2;
-}
-
-.email-card.offer {
-  border-left-color: #2e7d32;
 }
 
 .email-card.other {
@@ -308,8 +274,8 @@ body {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
-  top: 0.5rem;
-  right: 0.5rem;
+  bottom: 2.3rem;
+  left: 19.5rem;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -498,19 +464,9 @@ body {
   margin-left: 0.5rem;
 }
 
-.status-interview {
+.status-updates {
   background-color: #e3f2fd;
   color: #1976d2;
-}
-
-.status-offer {
-  background-color: #e8f5e8;
-  color: #2e7d32;
-}
-
-.status-rejection {
-  background-color: #ffebee;
-  color: #c62828;
 }
 
 .status-other {
