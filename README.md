@@ -1,11 +1,19 @@
 # Parsea
 #### A secure desktop tool that reads your inbox and flags job updates, so you don't waste time checking every email.
 ![Showcase](resources/showcase.gif)
+#### Parsea (Quality of Life Update - 27th June 2025)
+![image](https://github.com/user-attachments/assets/d67343a4-b6a2-43da-a697-475270ba38b3)
 
 #### Parsea (UI Update - 20th June 2025)
 ![image](https://github.com/user-attachments/assets/ee5c22af-cce7-405a-931f-c5c54cac034f)
 #### Parsea (CyberSecurity Update - 19th June 2025)
 ![image](https://github.com/user-attachments/assets/31df741a-61a3-4699-a5a1-b32adba6300b)
+
+## Recent Updates (June 27, 2025)
+- Refined UI
+- Removed "Interview", "Offer", "Rejection" Option
+- Setup logic for planned MongoDB and React Integration
+- Setup LLM logic for other services options
 
 ## Recent Updates (June 20, 2025)
 - Rehauled the entire UI
