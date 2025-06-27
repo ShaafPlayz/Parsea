@@ -49,18 +49,36 @@ async function classifyEmail() {
   const testPrompt = `Could you find the email from Workday HR ON June 13TH: ${emailsText}`
   try {
     const response = await cohere.chat({
-      model: "command-a-03-2025",
+      model: "command-r-plus",
       messages: [
         {
           role: "system",
-          content: `You are an assistant that classifies job application–related emails. Your task is to read each email and assign it one of the following classifications based on its content:
+          content: `You are an assistant tasked with classifying job application–related emails into precise categories. Carefully read each email and assign it exactly one of the following classifications based on its content:
 
-                - Interview — The email contains an invitation to interview.
-                - Offer — The email contains a job offer or intent to hire.
-                - Rejection — The email clearly states the application was unsuccessful.
-                - Confirmation — The email confirms receipt of an application, test, or other form submission.
-                - Other — Anything that doesn’t fall into the above categories.
+                - Interview:
+                  - Explicitly contains an invitation or scheduling details for an interview.
+                  - May include phrases like "schedule an interview," "invite you to interview," or mentions of interview dates and times.
 
+                - Offer:
+                  - Clearly extends a formal job offer or explicitly states an intent to hire.
+                  - Often includes phrases such as "pleased to offer you," "extend an offer," "join our team," or provides details regarding salary, start date, and employment terms.
+
+                - Rejection:
+                  - Clearly states that the candidate's application was unsuccessful.
+                  - Typically includes phrases such as "we regret to inform," "unfortunately, you were not selected," "moving forward with other candidates," or similar expressions of denial.
+
+                - Referral:
+                  - Suggests forwarding or recommending the candidate to another role, department, or recruiter.
+                  - May include terms like "forwarding your application," "recommendation for another position," or "passing your resume along."
+
+                - Confirmation:
+                  - Confirms receipt of an application, test submission, documents, or any other materials related to the hiring process.
+                  - Usually contains language such as "we have received your application," "confirmation of submission," or "your application is under review."
+
+                - Other:
+                  - Anything not clearly related to job application processes, including newsletters, general inquiries, promotional messages, or unrelated correspondence.
+                  - Does not contain explicit language indicative of job status updates, interviews, rejections, offers, referrals, or confirmations.
+                  - Ensure precise attention to context and explicit phrasing to differentiate clearly between these categories and minimize misclassification.
 
                 Start by writing a summary section:
                 **Summary Section:**

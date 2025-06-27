@@ -5,6 +5,8 @@ const csv = require('csv-parser');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 require('dotenv').config();
 const { ImapFlow } = require('./lib/imap-flow');
+const { simpleParser } = require('mailparser');
+
 
 // function checkSettings(){
 //   try {
@@ -95,7 +97,7 @@ async function fetchEmailsAsJSON() {
                 `"${email.from}"`,
                 `"${email.to}"`,
                 `"${new Date(email.date).toISOString()}"`,
-                `"${email.raw.replace(/"/g, '""').substring(0, 500)}"` // Truncate raw content and escape quotes
+                `"${email.raw.replace(/"/g, '""').substring(0, 500)}"`
             ];
             csvRows.push(row.join(','));
         });

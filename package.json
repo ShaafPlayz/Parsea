@@ -1,23 +1,13 @@
 {
-  "name": "parsea",
-  "productName": "Parsea",
-  "author": "shaaflabs",
-  "version": "1.0.0",
-  "description": "An automation tool that reads your emails for you! Thus saving you time!",
-  "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "package": "electron-builder"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "electron": "^36.4.0",
-    "electron-builder": "^26.0.12",
-    "electron-reload": "^2.0.0-alpha.1"
-  },
+  "name": "parseui",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "@azure/msal-node": "^3.6.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
     "axios": "^1.10.0",
     "cohere-ai": "^7.17.1",
     "csv-parser": "^3.2.0",
@@ -25,24 +15,49 @@
     "dotenv": "^16.5.0",
     "imap": "^0.8.17",
     "imapflow": "^1.0.188",
-    "mailparser": "^3.7.3"
+    "mailparser": "^3.7.3",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "electron": "^37.1.0",
+    "electron-builder": "^26.0.12",
+    "electron-is-dev": "^3.0.1"
+  },
+  "electron": "electron .",
+  "dist": "electron-builder",
+  "main": "electron.js",
   "build": {
-    "appId": "com.shaaflabs.parsea",
-    "productName": "Parsea",
+    "appId": "com.example.myapp",
+    "productName": "My Electron App",
     "directories": {
       "output": "dist"
-    },
-    "files": [
-      "**/*",
-      "!resources${/*}"
-    ],
-    "win": {
-      "target": "nsis"
-    },
-    "nsis": {
-      "oneClick": false,
-      "allowToChangeInstallationDirectory": true
     }
   }
 }

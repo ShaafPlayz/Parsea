@@ -1,0 +1,48 @@
+{
+  "name": "parsea",
+  "productName": "Parsea",
+  "author": "shaaflabs",
+  "version": "1.0.0",
+  "description": "An automation tool that reads your emails for you! Thus saving you time!",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-builder"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^36.4.0",
+    "electron-builder": "^26.0.12",
+    "electron-reload": "^2.0.0-alpha.1"
+  },
+  "dependencies": {
+    "@azure/msal-node": "^3.6.0",
+    "axios": "^1.10.0",
+    "cohere-ai": "^7.17.1",
+    "csv-parser": "^3.2.0",
+    "csv-writer": "^1.6.0",
+    "dotenv": "^16.5.0",
+    "imap": "^0.8.17",
+    "imapflow": "^1.0.188",
+    "mailparser": "^3.7.3"
+  },
+  "build": {
+    "appId": "com.shaaflabs.parsea",
+    "productName": "Parsea",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*",
+      "!resources${/*}"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

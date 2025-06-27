@@ -44,26 +44,30 @@ function createWindow() {
     width: 1000,
     height: 700,
     webPreferences: {
-      nodeIntegration: true,
-      contextIsolation: false
+      nodeIntegration: true
     }
   });
 
-  win.loadFile('index.html');
+   const startURL = isDev
+    ? 'http://localhost:3000'
+    : `file://${path.join(__dirname, '../build/index.html')}`;
+
+  mainWindow.loadURL(startURL);
+
+  mainWindow.on('closed', () => (mainWindow = null));
 }
 
-// Event logic
-app.whenReady().then(() => {
-  createWindow();
-
-  app.on('activate', () => {
-    if (BrowserWindow.getAllWindows().length === 0) createWindow();
-  });
-});
+app.on('ready', createWindow);
 
 app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit();
+  }
+});
+
+app.on('activate', () => {
+  if (mainWindow === null) {
+    createWindow();
   }
 });
 
